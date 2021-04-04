@@ -1,0 +1,169 @@
+
+.body-3 
+{
+    color: blanchedalmond;
+    background-color: cornflowerblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speaker-form-header 
+{
+      text-align: center;
+      background-color: slategrey;
+      border: 1px solid slateblue;
+      border-radius: 3px;
+      width: 80%;
+      margin: 40px 0;
+      padding: 50px;
+}
+
+.speaker.form {
+
+    background-color: floralwhite;
+    width: 80%;
+    padding: 50px;
+    margin: 0 0 40px 0;
+ 
+ }
+ 
+ .form-row input [type="text"], 
+ .form-row input [type="email"] 
+  { 
+     background-color: gainsboro;
+     border: 1px solid bisque;
+     border-radius: 3px;
+     width: 100%;
+     padding: 7px;
+     font-size: 14px;
+     
+  }
+ 
+ .form-row input [type="text"] :invalid
+ .form-row input [type="email"] :invalid  
+  {
+      border: 2px solid goldenrod;
+     
+  }
+     
+ 
+ .form-row select {
+     width: 100%;
+     padding: 5px;
+  }
+ 
+ .form-row textarea {
+     resize: none;
+     min-height: 200px;
+     width: 100%;
+ 
+  }
+ 
+ .form-row button {
+ 
+      font-size: 16px;
+      font-weight: bold;
+      background-color: royalblue;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 40px;
+      cursor: pointer;
+  }
+ 
+
+/*.......................*//// 
+/*Nesting o anidamiento*/
+
+
+
+.full-body {
+
+    background: linear-gradient(to right,#ff40a0, #795e66) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+    
+
+    h1 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 2rem;
+        margin-left: 25rem;
+        font-weight: 200;
+        padding: 24px 88px 22px 124px;
+        margin-bottom: 2rem;
+    }
+    
+    
+    
+    .nav-pills .nav-link {
+        border-radius: 25rem;
+        border: 1px solid orange;
+        margin-bottom: 3rem;
+        color: blanchedalmond;
+    }
+    
+    
+    
+    
+    img {
+         margin-bottom: 5rem;
+        margin-left: 25rem;
+        vertical-align: middle;
+        border-style: none;
+        border: 1px solid #fff999; 
+         border-radius: 6px;
+    
+    
+    
+    .img-nav { 
+           
+           vertical-align: middle; 
+           border-style: none; 
+           margin-bottom: 5rem;
+           
+    
+        .img-nav2 { 
+         
+         vertical-align: middle;
+         border-style: none;
+         margin-bottom: 5rem; 
+         
+    
+        } 
+    
+      }
+
+    }
+
+    
+
+  @media only screen and (min-width:402px) and (max-width: 960px) { 
+    body {
+        background-color: #f3bb03bd ;
+       }
+   }
+
+ 
+  .carousel-indicators li 
+  
+  {
+    background-clip: padding-box;
+    box-sizing: content-box;
+    width: 32px;
+    height: 4px;
+    
+
+}
+
+
+ 
+
+ 

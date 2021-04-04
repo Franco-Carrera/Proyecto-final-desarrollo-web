@@ -1,0 +1,121 @@
+.header-container {
+    background-color: $bg-index;
+
+    h1{
+        color:burlywood
+    }
+    
+}
+
+/* -------- */
+
+  /* HOME ARTISTAS */
+  
+
+
+
+  .menu-container-2 {
+   
+    display: flex;
+    justify-content: center; 
+    
+ 
+    color: aliceblue;
+    background-color: skyblue;
+    padding: 20px 0;
+    
+    
+   } 
+ 
+   .menu-2 {
+ 
+      width: 900px;
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid  #fff; 
+   }
+ 
+ 
+ 
+    .links {
+      
+     /*  */
+      display: flex;
+      justify-content: flex-end;
+ 
+ 
+    }
+ 
+   
+      .login {
+ 
+      margin-left: 28px;
+       
+ 
+      }
+ 
+ 
+     .logo-container {
+ 
+     color: #5595ea;
+     background-color: #d6e9fe;
+     display: flex;
+     justify-content: center;
+     
+     }
+ 
+     .logo{
+ 
+     width: 908px;
+     height: 360px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+     
+ 
+     }
+ 
+      /* ------------------ */
+ 
+ 
+      /* --------- */
+ 
+   .h2{
+    
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 20px;
+     padding: 8px;
+     margin: 33px;
+     margin-left: 59px;
+     color: bisque;
+     text-align: justify;
+     text-decoration: cadetblue;
+     font-size: 18px;
+     letter-spacing: 3px;
+     
+   }
+ 
+ 
+   .material {
+     margin: 35px;
+     margin-left: 60px;
+     padding: 28px;
+     font-size: 20px;
+     letter-spacing: 3px;
+     width: 45%;
+ }
+ 
+   .photo-grid-container {
+ 
+    display: flex;
+    justify-content: center;
+    width: 656px;
+    height: 100px;
+    margin-left: 70px;
+    
+ 
+
+   }
+ 
+

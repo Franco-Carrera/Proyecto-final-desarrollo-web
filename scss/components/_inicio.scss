@@ -1,0 +1,136 @@
+/* INICIO */
+/* h1/inicio */
+
+.cepillo-2 {
+    width: 68px;
+    margin-left: 333px;
+  }
+  
+  .paleta-2 {
+  width: 66px;
+  margin-left: 422px;
+  margin-top: 33px;
+  }
+  
+  
+  .inicio-2  {
+  
+  font-size: 23px;
+  background-color: lightblue;
+  color: lemonchiffon;
+  padding: 46px;
+  margin: 4rem auto;
+  letter-spacing: 4px;
+  line-height: 2px;
+  text-decoration: lightseagreen;
+  text-align: left;
+  
+  }
+
+  
+h2, h3   {
+
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px; 
+    margin: 3rem;  
+    margin-left: 44px; 
+    background-color:burlywood;
+    text-decoration: solid;
+    text-align: initial;
+    display: inline;
+   
+    padding-left: 62px;
+    padding-right: 68px;
+  
+  }
+
+  .h1  {
+    margin: 3rem;
+    padding: 56px;
+    width: 58px;
+    margin-left: 44px;
+    font-family: 'Montserrat', sans-serif;;
+   }
+   
+   
+   /* h2/presentación */
+   .h2 {
+   
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: normal;
+     font-size: 22px;
+     background-color: lightseagreen;
+     text-decoration: lightgreen;
+     letter-spacing: 2px;
+     word-spacing: 3px;
+     margin-left: 44px;
+    
+   }
+
+
+
+   .menuz  {
+     
+    margin-left: 44px;
+    background-color: turquoise;
+    display: flex;
+    justify-content: center;
+    border: 3px solid blueviolet;
+    
+    
+
+    text-decoration: lightcoral;
+    padding-left: initial 22px;
+    margin: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+  
+  }
+
+
+   .span-inicio {
+
+    margin: 32px;
+    padding: 104px;
+    font-size: 1rem;
+  }
+
+
+.span-1  {
+
+   padding: 86px;
+   margin: 65px;
+   font-style: oblique;
+   letter-spacing: 3px;
+   margin-left: 44px;
+ 
+   }
+
+   /* Animaciones botton */
+   .box {
+    border-radius: 5px;
+    height: 40px;
+    width: 86px;
+    margin: 50px auto;
+  }
+
+
+  .box1 {
+    background-color: rosybrown;
+    transition: all 1.5s linear;
+  }
+
+   .box2 {
+     background-color: sienna;
+     transition: all 3s ease-out;
+     transform: rotate(400deg);
+     transform-origin: left top;
+   }
+
+   box:hover {
+     transform: scale(3);
+     transform: rotate(90deg scale12) translateX(60px);
+     background-color: tan;
+     
+   }
+   
