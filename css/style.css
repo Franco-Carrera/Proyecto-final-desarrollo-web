@@ -1,14 +1,47 @@
 @charset "UTF-8";
 /*Variables*/
+/*Variables*/
 .header-container {
   background-color: black;
 }
+
 .header-container h1 {
   color: burlywood;
 }
 
 /* -------- */
 /* HOME ARTISTAS */
+.bodies {
+  background: linear-gradient(to right, #ff40a0, #795e66);
+  width: 100%;
+}
+
+.container-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-text-1 {
+  height: -1rem;
+  width: 55%;
+}
+
+.img-art {
+  width: 57%;
+  height: 60%;
+  margin-left: 1.3rem;
+  border: black;
+  justify-content: center;
+}
+
+.img-art2 {
+  width: 60%;
+  height: 50%;
+  margin-left: 1.3rem;
+  border: black;
+  justify-content: center;
+}
+
 .menu-container-2 {
   display: flex;
   justify-content: center;
@@ -22,6 +55,7 @@
   display: flex;
   justify-content: space-around;
   border: 1px solid #fff;
+  flex-direction: row-reverse;
 }
 
 .links {
@@ -45,12 +79,11 @@
   width: 908px;
   height: 360px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-/* ------------------ */
-/* --------- */
+/* --------Fin Logos---------- */
 .h2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
@@ -83,12 +116,36 @@
 
 .body-3 {
   color: blanchedalmond;
-  background-color: cornflowerblue;
+  background-color: rosybrown;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.h-1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: 250;
+  padding: 24px 71px 18px 0;
+  margin-bottom: 2rem;
+  float: left;
+  margin-left: 4rem;
+}
+
+.h1-1 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-left: 1.3rem;
+  font-family: "uuc", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 16px 60px 22px 10px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #3C3C3C;
 }
 
 .speaker-form-header {
@@ -143,67 +200,143 @@
   cursor: pointer;
 }
 
-/*.......................*/
-/*Nesting o anidamiento*/
+/*..........Fin.............*/
+/*Nesting o anidamiento Home Index*/
 .full-body {
-  background: linear-gradient(to top, #ff40a0, #ffe0e9);
+  background: linear-gradient(to right, #ff40a0, #795e66);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.full-body h1 {
-  font-family: "Montserrat", sans-serif;
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
-  margin-left: 25rem;
-  font-weight: 200;
+  margin-left: 22.5rem;
+  font-weight: 250;
   padding: 24px 88px 22px 124px;
   margin-bottom: 2rem;
 }
-.full-body h1 nav {
-  color: #fff999;
-  font-size: 1.3rem;
-  background-color: peachpuff;
-  font-style: italic;
-  font-family: "Roboto Slab", serif;
-  border: 3px solid sienna;
-  word-spacing: 7px;
-  width: 11rem;
-  padding: 2px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-.full-body h1 nav .nav-pills .nav-link {
+
+.nav-pills .nav-link {
+  border-radius: 25rem;
+  border: 3px solid #8e1e92a9;
   margin-bottom: 3rem;
+  color: blanchedalmond;
+  top: 0%;
+  z-index: 1;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
+.container-nav {
+  height: 100px;
+  transition: height 2s;
+}
+
+.container-nav:hover {
+  height: 160px;
+}
+
+img {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  margin-left: 22.5rem;
+  vertical-align: middle;
+  border-style: none;
+  border-radius: 6px;
+  overflow: hidden;
+  height: auto;
+}
+
+img .img-nav-fluid {
+  vertical-align: middle;
+  border-style: none;
+  margin-bottom: 5rem;
+}
+
+img .img-nav .img-nav2-fluid {
+  vertical-align: middle;
+  border-style: none;
+  margin-bottom: 5rem;
+}
+
+h3 {
+  font-size: 34px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 40px 0 20px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  border-color: #ddd;
+  color: #3C3C3C;
+}
+
+/* ...........................MediaQuerie............................ */
 @media only screen and (min-width: 402px) and (max-width: 960px) {
   body {
-    background-color: #2ECC71;
+    background-color: #f3bb03f1;
   }
 }
-.img-nav {
-  margin-left: 15rem;
-  vertical-align: middle;
-  border-style: none;
-  margin-bottom: 3rem;
+/*Cel mobile*/
+@media only screen and (max-width: 965px) {
+  body {
+    background-color: lemonchiffon;
+  }
+
+  .nav-pills .nav-link {
+    margin-block-start: -1.2rem;
+    width: 80%;
+    display: flex;
+    padding-left: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    margin-left: -5rem;
+  }
+
+  img {
+    width: 70%;
+    margin-left: 5rem;
+    height: auto;
+  }
+
+  .carrousel-indicators li {
+    float: left;
+    height: auto;
+  }
 }
-.img-nav .img-nav2 {
-  margin-left: 15rem;
-  vertical-align: middle;
-  border-style: none;
-  margin-bottom: 3rem;
+/* ....................................................................... */
+.container-carru {
+  vertical-align: baseline;
 }
 
 .carousel-indicators li {
   background-clip: padding-box;
   box-sizing: content-box;
-  width: 32px;
-  height: 4px;
-  margin-bottom: 6rem;
+  height: auto;
+}
+
+.footer {
+  position: static;
+  bottom: 0px;
+  width: 100%;
+  background: cornflowerblue;
 }
 
 /* INICIO */
 /* h1/inicio */
+.body2 {
+  background: linear-gradient(to top, #ff40a0, #795e66);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .cepillo-2 {
   width: 68px;
   margin-left: 333px;
@@ -215,104 +348,51 @@
   margin-top: 33px;
 }
 
-.inicio-2 {
-  font-size: 23px;
-  background-color: lightblue;
-  color: lemonchiffon;
-  padding: 46px;
-  margin: 4rem auto;
-  letter-spacing: 4px;
-  line-height: 2px;
-  text-decoration: lightseagreen;
-  text-align: left;
+.contein {
+  height: 100vh;
+  width: 100%;
+  background: plum;
+  display: grid;
+  grid: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas: "header header header header" "main main main side" "footer footer footer";
 }
 
-h2, h3 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  margin: 3rem;
-  margin-left: 44px;
-  background-color: burlywood;
-  text-decoration: solid;
-  text-align: initial;
-  display: inline;
-  padding-left: 62px;
-  padding-right: 68px;
+.header {
+  background: blanchedalmond;
+  text-align: center;
+  grid-column: span 2;
+  grid-area: header;
 }
 
-.h1 {
-  margin: 3rem;
-  padding: 56px;
-  width: 58px;
-  margin-left: 44px;
-  font-family: "Montserrat", sans-serif;
+.item2 {
+  background: blueviolet;
+  text-align: center;
+  grid-column: span 3;
 }
 
-/* h2/presentación */
-.h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: normal;
-  font-size: 22px;
-  background-color: lightseagreen;
-  text-decoration: lightgreen;
-  letter-spacing: 2px;
-  word-spacing: 3px;
-  margin-left: 44px;
+.item3 {
+  background: coral;
+  text-align: center;
 }
 
-.menuz {
-  margin-left: 44px;
-  background-color: turquoise;
-  display: flex;
-  justify-content: center;
-  border: 3px solid blueviolet;
-  text-decoration: lightcoral;
-  padding-left: initial 22px;
-  margin: 35px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 500;
+.item4 {
+  background: slateblue;
+  text-align: center;
 }
 
-.span-inicio {
-  margin: 32px;
-  padding: 104px;
-  font-size: 1rem;
+.item5 {
+  background: mediumslateblue;
+  text-align: center;
 }
 
-.span-1 {
-  padding: 86px;
-  margin: 65px;
-  font-style: oblique;
-  letter-spacing: 3px;
-  margin-left: 44px;
+@media screen and (max-width: 600px) {
+  .contein {
+    grid: repeat 3, 1fr;
+    grid-template-areas: "header header menú lat" "main main menu lat" "footer footer menu lat";
+  }
 }
-
-/* Animaciones botton */
-.box {
-  border-radius: 5px;
-  height: 40px;
-  width: 86px;
-  margin: 50px auto;
-}
-
-.box1 {
-  background-color: rosybrown;
-  transition: all 1.5s linear;
-}
-
-.box2 {
-  background-color: sienna;
-  transition: all 3s ease-out;
-  transform: rotate(400deg);
-  transform-origin: left top;
-}
-
-box:hover {
-  transform: scale(3);
-  transform: rotate(90deg scale12) translateX(60px);
-  background-color: tan;
-}
-
 * {
   margin: 0;
   padding: 0;
