@@ -93,15 +93,13 @@
 
 .full-body {
 
-  background: linear-gradient(to right,#ff40a0, #795e66) ;
+  background: linear-gradient(to right,#1e5737, #487c58) ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 
 }
-
-
 
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -114,37 +112,39 @@ h1 {
 
 
 .nav-pills .nav-link {
-  border-radius: 25rem;
   border: 3px solid #8e1e92a9;
   margin-bottom: 3rem;
   color: blanchedalmond;
   top: 0%;
-  z-index: 1;
+  z-index: 1111;
   margin-bottom: 2rem;
   margin-top: 1rem;
-   
+  
+}
+
+nav { 
+margin-top: -4rem;
 }
 
 .container-nav{
   height: 100px;
-  transition: height 2s;
+  transition: height 1s;
 }
 
 .container-nav:hover {
-  height: 160px; 
+  height: 140px; 
 }
 
 
 img {
   margin-top: 3rem;
   margin-bottom: 5rem;
-  margin-left: 22.5rem;
+  margin-left: 22rem;
   vertical-align: middle;
   border-style: none;
   border-radius: 6px;
   overflow: hidden;
   height: auto;
-  
   
 }
 img .img-nav-fluid {
@@ -159,13 +159,14 @@ img .img-nav .img-nav2-fluid {
 }
 
 
+
 h3 {
   
-    font-size: 34px;
+    font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1px;
     padding: 40px 0 20px 5px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue";
     text-transform: uppercase;
     border-color: #ddd;
     color: #3C3C3C;
@@ -173,9 +174,27 @@ h3 {
 
 /* ...........................MediaQuerie............................ */
 @media only screen and (min-width: 402px) and (max-width: 960px) {
-  body {
-    background-color: #f3bb03f1;
+  img {
+    width: 77%;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    height: auto;
   }
+
+  .nav-pills .nav-link {
+    margin-block-start: -1.2rem;
+    display: flex;
+    padding-left: 3rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.carrousel-indicators li {
+  float: left;
+  height: auto;
+}
+
 }
 
 
@@ -188,7 +207,6 @@ h3 {
 
   .nav-pills .nav-link {
     margin-block-start: -1.2rem;
-    width: 80%;
     display: flex;
     padding-left: 3rem;
     justify-content: center;
@@ -200,11 +218,12 @@ h3 {
     margin-left: -5rem;
   }
 
+  
   img {
     width: 70%;
-    margin-left: 5rem;
+    margin-top: 4rem;
+    margin-left: 3rem;
     height: auto;
-
   }
 
  .carrousel-indicators li {
@@ -217,7 +236,7 @@ h3 {
 
 .container-carru {
   vertical-align: baseline;
-    
+  
 }
 
 

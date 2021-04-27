@@ -162,94 +162,124 @@
 /*..........Fin.............*/
 
 /*Nesting o anidamiento Home Index*/
-
 .full-body {
-
-  background: linear-gradient(to right,#ff40a0, #795e66) ;
+  background: linear-gradient(to right, #ff40a0, #795e66);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
-  margin-left: 23rem;
+  margin-left: 22.5rem;
   font-weight: 250;
   padding: 24px 88px 22px 124px;
   margin-bottom: 2rem;
 }
 
-.nav-pills .nav-link {
-  border-radius: 25rem;
+.navbar {
+  border-radius: 2rem;
   border: 3px solid #8e1e92a9;
   margin-bottom: 3rem;
   color: blanchedalmond;
   top: 0%;
   z-index: 1;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  display: block;
+}
+
+.container-nav {
+  height: 100px;
+  transition: height 2s;
+}
+
+.container-nav:hover {
+  height: 160px;
 }
 
 img {
+  margin-top: 3rem;
   margin-bottom: 5rem;
-  margin-left: 23rem;
+  margin-left: 22.5rem;
   vertical-align: middle;
   border-style: none;
   border-radius: 6px;
   overflow: hidden;
-}
-img .img-nav {
-  vertical-align: middle;
-  border-style: none;
-  margin-bottom: 5rem;
- 
-}
-img .img-nav .img-nav2 {
-  vertical-align: middle;
-  border-style: none;
-  margin-bottom: 5rem;
-  
+  height: auto;
 }
 
+img .img-nav-fluid {
+  vertical-align: middle;
+  border-style: none;
+  margin-bottom: 5rem;
+}
+
+img .img-nav .img-nav2-fluid {
+  vertical-align: middle;
+  border-style: none;
+  margin-bottom: 5rem;
+}
 
 h3 {
-  background-color: #301b03fd;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: initial;
-  align-items: initial;
-  display: inline-block;
-  text-decoration: none;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  margin-left: 2rem;
-  color: lightsteelblue;
+  font-size: 34px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 40px 0 20px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  border-color: #ddd;
+  color: #3C3C3C;
 }
 
 /* ...........................MediaQuerie............................ */
 @media only screen and (min-width: 402px) and (max-width: 960px) {
   body {
-    background-color: #f3bb03e0;
+    background-color: #f3bb03f1;
   }
 }
-
 /*Cel mobile*/
 @media only screen and (max-width: 965px) {
   body {
     background-color: lemonchiffon;
   }
 
-  h1{
-    margin-left: 18rem;
+  .nav-pills .nav-link {
+    margin-block-start: -1.2rem;
+    width: 80%;
+    display: flex;
+    padding-left: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    margin-left: -5rem;
   }
 
   img {
-    width: 68%;
-    margin-left: 18rem;
+    width: 70%;
+    margin-left: 5rem;
+    height: auto;
+  }
+
+  .carrousel-indicators li {
+    float: left;
+    height: auto;
   }
 }
 /* ....................................................................... */
+.container-carru {
+  vertical-align: baseline;
+}
+
 .carousel-indicators li {
   background-clip: padding-box;
   box-sizing: content-box;
@@ -262,11 +292,11 @@ h3 {
   width: 100%;
   background: cornflowerblue;
 }
-
-
-
-
 /* --------Fin-------- */
+
+
+
+
 
 /* ______________Home Inicio_________ */
 
