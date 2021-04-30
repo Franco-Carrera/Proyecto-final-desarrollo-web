@@ -1,62 +1,81 @@
-@charset "UTF-8";
+/*Variables*/
 /*Variables*/
 .header-container {
   background-color: black;
 }
+
 .header-container h1 {
   color: burlywood;
 }
 
 /* -------- */
 /* HOME ARTISTAS */
-
 .bodies {
-  background: linear-gradient(to right,#ff40a0, #795e66) ;
-
+  background: linear-gradient(to right, #3d7c5d, #387a4efa);
+  width: 100%;
+  height: auto;
 }
 
-.menu-container-2 {
+
+
+.container-button {
   display: flex;
   justify-content: center;
-  color: aliceblue;
-  background-color: skyblue;
-  padding: 20px 0;
+  border: 1.6px solid black;
 }
 
-.menu-2 {
-  width: 900px;
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid #fff;
+.ContenedorArtista {
+  width: 100%;
 }
 
-.links {
-  /*  */
-  display: flex;
-  justify-content: flex-end;
+.parrafoArtista{
+ padding: 10px;
+ 
 }
 
-.login {
-  margin-left: 28px;
+
+@media only screen and (min-width:965px) and (max-width: 1600px) 
+{  
+  .imagenArtistas {
+    position: relative; 
+  }
 }
 
-.logo-container {
-  color: #5595ea;
-  background-color: #d6e9fe;
-  display: flex;
-  justify-content: center;
+.card-imagenes {
+  margin: 0 auto;
+  
 }
 
-.logo {
-  width: 908px;
-  height: 360px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.card {
+    background: #b17d7d;
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 2.25rem;
+  padding-left: 0.4rem;
+  padding-right: 0rem;
+  margin-bottom: 6.6rem;
 }
 
-/* --------Fin Logos---------- */
 
+.card-group>.card:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; 
+ } 
+
+.card-group>.card {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-bottom: 8rem;
+}
+
+/* -----__---Fin Artistas--__-------- */
+
+
+/* __--Acerca de Ypres--__ */
 .h2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
@@ -70,42 +89,44 @@
   letter-spacing: 3px;
 }
 
-.material {
-  margin: 35px;
-  margin-left: 60px;
-  padding: 28px;
-  font-size: 20px;
-  letter-spacing: 3px;
-  width: 45%;
-}
+.ypresLogo {
+  width: 10%;
+  }
 
-.photo-grid-container {
-  display: flex;
-  justify-content: center;
-  width: 656px;
-  height: 100px;
-  margin-left: 70px;
-}
-
-/* ...............____ Home Acerca YPRES____.............. */
 
 .body-3 {
   color: blanchedalmond;
-  background-color: cornflowerblue;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: rosybrown;
+  font-family: "Poppins", sans-serif;;
   font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
-.H-1 {
+.h-1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
-  margin-left: 2rem;
-  font-weight: 200;
-  align-self: center;
-  margin-bottom: 1rem;
+  font-weight: 250;
+  padding: 24px 71px 18px 0;
+  margin-bottom: 2rem;
+  float: left;
+  margin-left: 4rem;
+}
+
+.h1-1 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-left: 1.3rem;
+  font-family: "uuc", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 16px 60px 22px 10px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #3C3C3C;
 }
 
 .speaker-form-header {
@@ -113,9 +134,10 @@
   background-color: slategrey;
   border: 1px solid slateblue;
   border-radius: 3px;
-  width: 80%;
+  width: 70%;
   margin: 40px 0;
   padding: 50px;
+  margin-top: -2rem;
 }
 
 .speaker.form {
@@ -159,11 +181,24 @@
   padding: 10px 40px;
   cursor: pointer;
 }
-/*..........Fin.............*/
 
+@media only screen and (min-width:300px) and (max-width:620px) {
+  .ypresLogo {
+    width: 20%;
+    justify-content: center;
+  }
+  
+}
+
+.ypresDiv {
+  max-width: 100%;
+}
+
+
+/*..........Fin.............*/
 /*Nesting o anidamiento Home Index*/
 .full-body {
-  background: linear-gradient(to right, #ff40a0, #795e66);
+  background: linear-gradient(to right, #1e5737, #487c58);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -179,36 +214,32 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.navbar {
-  border-radius: 2rem;
+.nav-pills .nav-link {
   border: 3px solid #8e1e92a9;
   margin-bottom: 3rem;
   color: blanchedalmond;
   top: 0%;
-  z-index: 1;
+  z-index: 1111;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
 
-.container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  display: block;
+nav {
+  margin-top: -4.5rem;
 }
 
 .container-nav {
   height: 100px;
-  transition: height 2s;
+  transition: height 1s;
 }
 
 .container-nav:hover {
-  height: 160px;
+  height: 140px;
 }
 
 img {
   margin-top: 3rem;
   margin-bottom: 5rem;
-  margin-left: 22.5rem;
   vertical-align: middle;
   border-style: none;
   border-radius: 6px;
@@ -216,44 +247,44 @@ img {
   height: auto;
 }
 
-img .img-nav-fluid {
-  vertical-align: middle;
-  border-style: none;
-  margin-bottom: 5rem;
-}
-
-img .img-nav .img-nav2-fluid {
-  vertical-align: middle;
-  border-style: none;
-  margin-bottom: 5rem;
+.carrousel {
+  margin: 0 auto;
 }
 
 h3 {
-  font-size: 34px;
+  font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1px;
   padding: 40px 0 20px 5px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue";
   text-transform: uppercase;
   border-color: #ddd;
-  color: #3C3C3C;
+  color: #191919;
 }
 
 /* ...........................MediaQuerie............................ */
-@media only screen and (min-width: 402px) and (max-width: 960px) {
-  body {
-    background-color: #f3bb03f1;
+@media only screen and (min-width: 320px) and (max-width: 960px) {
+
+
+  .nav-pills .nav-link {
+    margin-block-start: -1.2rem;
+    display: flex;
+    padding-left: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carrousel-indicators li {
+    float: left;
+    height: auto;
   }
 }
 /*Cel mobile*/
 @media only screen and (max-width: 965px) {
-  body {
-    background-color: lemonchiffon;
-  }
+  
 
   .nav-pills .nav-link {
     margin-block-start: -1.2rem;
-    width: 80%;
     display: flex;
     padding-left: 3rem;
     justify-content: center;
@@ -265,8 +296,9 @@ h3 {
   }
 
   img {
-    width: 70%;
-    margin-left: 5rem;
+    width: 55%;
+    margin-top: 5rem;
+    margin-left: 6rem;
     height: auto;
   }
 
@@ -274,6 +306,8 @@ h3 {
     float: left;
     height: auto;
   }
+
+  
 }
 /* ....................................................................... */
 .container-carru {
@@ -286,163 +320,156 @@ h3 {
   height: auto;
 }
 
-.footer {
-  position: static;
-  bottom: 0px;
-  width: 100%;
-  background: cornflowerblue;
-}
-/* --------Fin-------- */
-
-
-
-
-
-/* ______________Home Inicio_________ */
-
-.full-body2 {
-  background: linear-gradient(to top,#ff40a0, #795e66) ;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(100px auto);
-  gap: 1em;
-
-  align-items: stretch;
-  
-}
-
-.element1 {
-  grid-column: 1/4;
-  grid-row: 1/3;
-}
-
-.element2 {
-  grid-column: 1/2;
-}
-
-.element3 {
-  grid-column: 2/4;
-}
-
-.grid.div {
-  background: skyblue;
-  padding: 1em;
-}
-
-.grid div:hover {
-  border: 1px solid orange;
-}
-
-
-
-.cepillo-2 {
-  width: 68px;
-  margin-left: 333px;
-}
-
-.paleta-2 {
-  width: 66px;
-  margin-left: 422px;
-  margin-top: 33px;
-}
-
-.inicio-2 {
-  font-size: 23px;
-  background-color: lightblue;
-  color: lemonchiffon;
-  padding: 46px;
-  margin: 4rem auto;
-  letter-spacing: 4px;
-  line-height: 2px;
-  text-decoration: lightseagreen;
-  text-align: left;
-}
-
-.h1 {
-  margin: 3rem;
-  padding: 56px;
-  width: 58px;
-  margin-left: 44px;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* h2/presentación */
-.h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: normal;
-  font-size: 22px;
-  background-color: lightseagreen;
-  text-decoration: lightgreen;
-  letter-spacing: 2px;
-  word-spacing: 3px;
-  margin-left: 44px;
-}
-
-.menuz {
-  margin-left: 44px;
-  background-color: turquoise;
-  display: flex;
+footer,
+.redes a {
+  text-decoration: none;
+  color: #B1CB08;
+  padding: 20px;
+  text-align: center;
   justify-content: center;
-  border: 3px solid blueviolet;
-  text-decoration: lightcoral;
-  padding-left: initial 22px;
-  margin: 35px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 500;
 }
 
-.span-inicio {
-  margin: 32px;
-  padding: 104px;
-  font-size: 1rem;
+/* INICIO */
+
+.contenedorPrincipal {
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "menu menu menu" "imagen1 contenido1 imagen2" "imagen1 contenido2 imagen2" "footer footer footer";
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  height: 100vh;
 }
 
-.span-1 {
-  padding: 86px;
-  margin: 65px;
-  font-style: oblique;
-  letter-spacing: 3px;
-  margin-left: 44px;
+
+
+
+.menu {
+  padding: 10px;
+  grid-area: menu;
+  height: 50px;
+  background-color: #191919;
+  color: #B1CB08;
 }
 
-/* Animaciones botton */
-.box {
-  border-radius: 5px;
-  height: 40px;
-  width: 86px;
-  margin: 50px auto;
+.imagen1 {
+  grid-area: imagen1;
+  background-color: #191919;
+  padding: 2rem;
 }
 
-.box1 {
-  background-color: rosybrown;
-  transition: all 1.5s linear;
+.imagen2 {
+  grid-area: imagen2;
+  background-color: #191919;
+  padding: 2rem;
 }
 
-.box2 {
-  background-color: sienna;
-  transition: all 3s ease-out;
-  transform: rotate(400deg);
-  transform-origin: left top;
+.contenido1 {
+  grid-area: contenido1;
+  background-color: #191919;
+  color: #B1CB08;
 }
 
-box:hover {
-  transform: scale(3);
-  transform: rotate(90deg scale12) translateX(60px);
-  background-color: tan;
+.contenido2 {
+  grid-area: contenido2;
+  background-color: #191919;
+  color: #B1CB08;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #191919;
+}
+
+.parrafoEstilo {
+  padding: 30px;
+  text-align: justify;
+  align-items: flex-start;
+}
+
+.parrafoEstilo:hover {
+  background-color: #913e52;
+  opacity: 0.8;
+}
+
+.tituloEstilo {
+  padding: 30px;
+  text-decoration: line-through;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #B1CB08;
+  padding: 30px;
+
+}
+
+.a6 {
+  justify-content: center;
+  font-size: 2rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.h4, h4 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+     display: flex;
+  justify-content: center;
+}
+
+
+footer,
+.redes a {
+  text-decoration: none;
+  color: #B1CB08;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.imagenEstilos {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+  margin-left: 0.6rem;
+  margin: 8px;
+  border: 2px solid springgreen;
+  margin-left: 0rem;
+}
+
+a {
+  padding: 10px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
+@media only screen and (min-width: 350px) and (max-width: 848px) {
+  .imagenEstilos {
+    width: 160%;
+    height: auto;
+    padding: 20px;
+    margin-left: 0.6rem;
+    margin: 8px;
+    border: 2px solid springgreen;
+  }
+
+  .parrafoEstilo {
+    padding: 22px;
+    text-align: justify;
+  }
+
+  .parrafoEstilo {
+    margin: 2rem;
+  }
+}
+
 
 /*# sourceMappingURL=style.css.map */

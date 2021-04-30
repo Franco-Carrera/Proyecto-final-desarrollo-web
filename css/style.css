@@ -11,78 +11,71 @@
 /* -------- */
 /* HOME ARTISTAS */
 .bodies {
-  background: linear-gradient(to right, #ff40a0, #795e66);
+  background: linear-gradient(to right, #3d7c5d, #387a4efa);
   width: 100%;
+  height: auto;
 }
+
+
 
 .container-button {
   display: flex;
-  justify-content: space-around;
-}
-
-.card-text-1 {
-  height: 1rem;
-  width: 55%;
-}
-
-.img-art {
-  width: 57%;
-  height: 60%;
-  margin-left: 1.3rem;
-  border: black;
   justify-content: center;
+  border: 1.6px solid black;
 }
 
-.img-art2 {
-  width: 60%;
-  height: 50%;
-  margin-left: 1.3rem;
-  border: black;
-  justify-content: center;
+.ContenedorArtista {
+  width: 100%;
 }
 
-.menu-container-2 {
-  display: flex;
-  justify-content: center;
-  color: aliceblue;
-  background-color: skyblue;
-  padding: 20px 0;
+.parrafoArtista{
+ padding: 10px;
+ 
 }
 
-.menu-2 {
-  width: 900px;
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid #fff;
-  flex-direction: row-reverse;
+
+@media only screen and (min-width:965px) and (max-width: 1600px) 
+{  
+  .imagenArtistas {
+    position: relative; 
+  }
 }
 
-.links {
-  /*  */
-  display: flex;
-  justify-content: flex-end;
+.card-imagenes {
+  margin: 0 auto;
+  
 }
 
-.login {
-  margin-left: 28px;
+
+.card {
+    background: #b17d7d;
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 2.25rem;
+  padding-left: 0.4rem;
+  padding-right: 0rem;
+  margin-bottom: 6.6rem;
 }
 
-.logo-container {
-  color: #5595ea;
-  background-color: #d6e9fe;
-  display: flex;
-  justify-content: center;
+
+.card-group>.card:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; 
+ } 
+
+.card-group>.card {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-bottom: 8rem;
 }
 
-.logo {
-  width: 908px;
-  height: 360px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+/* -----__---Fin Artistas--__-------- */
 
-/* --------Fin Logos---------- */
+
+/* __--Acerca de Ypres--__ */
 .h2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
@@ -96,31 +89,20 @@
   letter-spacing: 3px;
 }
 
-.material {
-  margin: 35px;
-  margin-left: 60px;
-  padding: 28px;
-  font-size: 20px;
-  letter-spacing: 3px;
-  width: 45%;
-}
+.ypresLogo {
+  width: 10%;
+  }
 
-.photo-grid-container {
-  display: flex;
-  justify-content: center;
-  width: 656px;
-  height: 100px;
-  margin-left: 70px;
-}
 
 .body-3 {
   color: blanchedalmond;
   background-color: rosybrown;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Poppins", sans-serif;;
   font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .h-1 {
@@ -152,9 +134,10 @@
   background-color: slategrey;
   border: 1px solid slateblue;
   border-radius: 3px;
-  width: 80%;
+  width: 70%;
   margin: 40px 0;
   padding: 50px;
+  margin-top: -2rem;
 }
 
 .speaker.form {
@@ -199,6 +182,18 @@
   cursor: pointer;
 }
 
+@media only screen and (min-width:300px) and (max-width:620px) {
+  .ypresLogo {
+    width: 20%;
+    justify-content: center;
+  }
+  
+}
+.ypresDiv {
+  max-width: 100%;
+}
+
+
 /*..........Fin.............*/
 /*Nesting o anidamiento Home Index*/
 .full-body {
@@ -229,7 +224,7 @@ h1 {
 }
 
 nav {
-  margin-top: -4rem;
+  margin-top: -4.5rem;
 }
 
 .container-nav {
@@ -244,7 +239,6 @@ nav {
 img {
   margin-top: 3rem;
   margin-bottom: 5rem;
-  margin-left: 22rem;
   vertical-align: middle;
   border-style: none;
   border-radius: 6px;
@@ -252,16 +246,8 @@ img {
   height: auto;
 }
 
-img .img-nav-fluid {
-  vertical-align: middle;
-  border-style: none;
-  margin-bottom: 5rem;
-}
-
-img .img-nav .img-nav2-fluid {
-  vertical-align: middle;
-  border-style: none;
-  margin-bottom: 5rem;
+.carrousel {
+  margin: 0 auto;
 }
 
 h3 {
@@ -272,17 +258,12 @@ h3 {
   font-family: "Helvetica Neue";
   text-transform: uppercase;
   border-color: #ddd;
-  color: #3C3C3C;
+  color: #191919;
 }
 
 /* ...........................MediaQuerie............................ */
-@media only screen and (min-width: 402px) and (max-width: 960px) {
-  img {
-    width: 77%;
-    margin-top: 4rem;
-    margin-left: 3rem;
-    height: auto;
-  }
+@media only screen and (min-width: 320px) and (max-width: 960px) {
+
 
   .nav-pills .nav-link {
     margin-block-start: -1.2rem;
@@ -316,9 +297,9 @@ h3 {
   }
 
   img {
-    width: 70%;
-    margin-top: 4rem;
-    margin-left: 3rem;
+    width: 55%;
+    margin-top: 5rem;
+    margin-left: 6rem;
     height: auto;
   }
 
@@ -326,6 +307,8 @@ h3 {
     float: left;
     height: auto;
   }
+
+  
 }
 /* ....................................................................... */
 .container-carru {
@@ -338,15 +321,17 @@ h3 {
   height: auto;
 }
 
-.footer {
-  position: static;
-  bottom: 0px;
-  width: 100%;
-  background: cornflowerblue;
+footer,
+.redes a {
+  text-decoration: none;
+  color: #B1CB08;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
 }
 
 /* INICIO */
-/* h1/inicio */
+
 .contenedorPrincipal {
   background-color: #111111;
   display: grid;
@@ -357,6 +342,12 @@ h3 {
   grid-row-gap: 2rem;
   height: 100vh;
 }
+
+.contenedorPaginación {
+  background-color: #191919;
+}
+
+
 
 .menu {
   padding: 10px;
@@ -414,8 +405,24 @@ footer {
 .menu a {
   text-decoration: none;
   color: #B1CB08;
-  padding: 10px;
+  padding: 30px;
+
 }
+
+.a6 {
+  justify-content: center;
+  font-size: 2rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.h4, h4 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+     display: flex;
+  justify-content: center;
+}
+
 
 footer,
 .redes a {
@@ -467,10 +474,6 @@ a {
     margin: 2rem;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 /*# sourceMappingURL=style.css.map */
