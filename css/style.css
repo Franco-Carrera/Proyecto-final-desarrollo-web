@@ -1,22 +1,50 @@
-/*Variables*/
-/*Variables*/
-.header-container {
-  background-color: black;
-}
 
-.header-container h1 {
-  color: burlywood;
-}
-
-/* -------- */
 /* HOME ARTISTAS */
+
 .bodies {
-  background: linear-gradient(to right, #3d7c5d, #387a4efa);
-  width: 100%;
-  height: auto;
+  background-color: rosybrown;
 }
 
+/* Container */
+.principal {
+  margin-top: 90px;
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
 
+/* Tarjet 1 */
+.card-header-first {
+  margin-top: -40px;
+  height: 120px;
+  background: linear-gradient(-90deg, #BF019F, #F2BA57);
+  box-shadow: 1px 5px 15px #a2a2a2;
+}
+
+/* Tarjet 2 */
+
+.card-header-second {
+  box-shadow: 11px 7px 15px #a2a2a2;
+  margin: -25px -25px 0px -25px;
+  height: 120px;
+  background: linear-gradient(-90deg, #8E2DE2, #4a00e0);
+}
+
+/* Tarjet 3 */
+
+.card-header-third {
+  margin-top: -25px;
+  height: 120px;
+  box-shadow: 1px 5px 15px #a2a2a2;
+  background: linear-gradient(-90deg, #11998e, #38efd7);
+}
+
+.card-section {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 16), 0 2px 16px 0 rgba(0, 0, 0, 12);
+}
+
+.card-section:hover {
+  box-shadow: 1px 20px #d2d2d2;
+}
 
 .container-button {
   display: flex;
@@ -24,13 +52,11 @@
   border: 1.6px solid black;
 }
 
-.ContenedorArtista {
-  width: 100%;
-}
-
-.parrafoArtista{
- padding: 10px;
- 
+.h1artistas {
+  margin-left: 3rem;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  display: block;
 }
 
 
@@ -41,36 +67,8 @@
   }
 }
 
-.card-imagenes {
-  margin: 0 auto;
-  
-}
 
 
-.card {
-    background: #b17d7d;
-}
-.card-body {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  min-height: 1px;
-  padding: 2.25rem;
-  padding-left: 0.4rem;
-  padding-right: 0rem;
-  margin-bottom: 6.6rem;
-}
-
-
-.card-group>.card:not(:last-child) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; 
- } 
-
-.card-group>.card {
-    -ms-flex: 1 0 0%;
-    flex: 1 0 0%;
-    margin-bottom: 8rem;
-}
 
 /* -----__---Fin Artistas--__-------- */
 
@@ -103,6 +101,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .h-1 {
@@ -113,20 +112,20 @@
   margin-bottom: 2rem;
   float: left;
   margin-left: 4rem;
+  justify-content: center;
 }
 
 .h1-1 {
-  font-size: 1.4rem;
+  font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
-  margin-left: 1.3rem;
+  margin-left: 0.6rem;
   font-family: "uuc", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  padding: 16px 60px 22px 10px;
-  margin-bottom: 2rem;
-  display: flex;
+  padding: 8px 21px 22px 10px;
+  margin-bottom: 1rem;
   justify-content: center;
-  color: #3C3C3C;
+  color: #191919;
 }
 
 .speaker-form-header {
@@ -134,7 +133,7 @@
   background-color: slategrey;
   border: 1px solid slateblue;
   border-radius: 3px;
-  width: 70%;
+  width: 60%;
   margin: 40px 0;
   padding: 50px;
   margin-top: -2rem;
@@ -142,7 +141,7 @@
 
 .speaker.form {
   background-color: floralwhite;
-  width: 80%;
+  width: 74%;
   padding: 50px;
   margin: 0 0 40px 0;
 }
@@ -186,7 +185,16 @@
   .ypresLogo {
     width: 20%;
     justify-content: center;
+    margin-top: -1rem;
+    margin-left: 15rem;
+}
   }
+  .speaker-form-header {
+    text-align: center;
+    background-color: slategrey;
+    border: 1px solid slateblue;
+    border-radius: 3px;
+    width: 82%;
   
 }
 .ypresDiv {
@@ -238,6 +246,7 @@ nav {
 
 img {
   margin-top: 3rem;
+  margin-left: 29.5rem;
   margin-bottom: 5rem;
   vertical-align: middle;
   border-style: none;
@@ -280,9 +289,7 @@ h3 {
 }
 /*Cel mobile*/
 @media only screen and (max-width: 965px) {
-  body {
-    background-color: lemonchiffon;
-  }
+  
 
   .nav-pills .nav-link {
     margin-block-start: -1.2rem;
@@ -311,8 +318,10 @@ h3 {
   
 }
 /* ....................................................................... */
+
 .container-carru {
   vertical-align: baseline;
+  margin: 0 auto;
 }
 
 .carousel-indicators li {
