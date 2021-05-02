@@ -254,6 +254,19 @@ h3 {
   height: auto;
 }
 
+footer,
+.redes a {
+  text-decoration: none;
+  color: #B1CB08;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+
+
 /*....... INICIO............ */
 .contenedorPrincipal {
   background-color: #111111;
@@ -265,6 +278,8 @@ h3 {
   grid-row-gap: 2rem;
   height: 100vh;
 }
+
+
 
 .menu {
   padding: 10px;
