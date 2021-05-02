@@ -1,0 +1,25 @@
+{
+  "name": "ypress-carrera",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node": "^15.14.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Franco-Carrera/Proyecto-final-desarrollo-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Franco-Carrera/Proyecto-final-desarrollo-web/issues"
+  },
+  "homepage": "https://github.com/Franco-Carrera/Proyecto-final-desarrollo-web#readme",
+  "description": ""
+}

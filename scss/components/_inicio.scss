@@ -1,0 +1,128 @@
+/* INICIO */
+/* h1/inicio */
+
+.contenedorPrincipal {
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "menu menu menu" "imagen1 contenido1 imagen2" "imagen1 contenido2 imagen2" "footer footer footer";
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  height: 100vh;
+}
+
+
+.menu {
+  padding: 10px;
+  grid-area: menu;
+  height: 50px;
+  background-color: #191919;
+  color: #B1CB08;
+  
+}
+
+.imagen1 {
+  grid-area: imagen1;
+  background-color: #191919;
+  padding: 2rem;
+ }
+
+.imagen2 {
+  grid-area: imagen2;
+  background-color: #191919;
+  padding: 2rem;
+}
+
+.contenido1 {
+  grid-area: contenido1;
+  background-color: #191919;
+  color: #B1CB08;
+}
+
+.contenido2 {
+  grid-area: contenido2;
+  background-color: #191919;
+  color: #B1CB08;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #191919;
+}
+
+.parrafoEstilo {
+  padding: 30px;
+  text-align: justify;
+  align-items: flex-start;
+}
+
+.parrafoEstilo:hover {
+  background-color: #913e52;
+  opacity: 0.8;
+}
+
+.tituloEstilo {
+  padding: 30px;
+  text-decoration: line-through;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #B1CB08;
+  padding: 10px;
+}
+
+footer,
+.redes a {
+  text-decoration: none;
+  color: #B1CB08;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.imagenEstilos {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+  margin-left: 0.6rem;
+  margin: 8px;
+  border: 2px solid springgreen;
+  margin-left: 0rem;
+}
+
+
+a {
+  padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width:770px) and (min-width:350px) {
+
+ .imagenEstilos {
+  width: 160%;
+  height: auto;
+  padding: 20px;
+  margin-left: 0.6rem;
+  margin: 8px;
+  border: 2px solid springgreen;
+
+  }
+  .parrafoEstilo {
+    padding: 22px;
+    text-align: justify;
+  }
+
+    .parrafoEstilo {
+      margin: 2rem;
+    }
+
+ } 
