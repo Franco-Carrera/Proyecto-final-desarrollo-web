@@ -1,11 +1,6 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
+/*Variables*/
+/* -------- */
+/* HOME ARTISTAS */
 /* HOME ARTISTAS */
 #facilities {
   background: rosybrown;
@@ -15,8 +10,8 @@
 #facilities h1 {
   font-weight: 600;
   font-size: 32px;
-  margin-left: -15px;;
-  padding: bottom 5px; 
+  margin-left: -15px;
+  padding: bottom 5px;
 }
 
 .title {
@@ -57,158 +52,24 @@
 .card-img-top {
   margin-left: 1rem;
   width: 90%;
-  border: solid 2px #191919 ;
+  border: solid 2px #191919;
 }
 
-@media only screen and (min-width:300px) and (max-width:500) {
+@media only screen and (min-width: 300px) and (max-width: 500) {
   #facilities h1 {
     font-size: 25px;
   }
-
 }
-
-
 /* -----__---Fin Artistas--__-------- */
-
-
-
-/* __--Acerca de Ypres--__ */
-.h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  padding: 8px;
-  margin: 33px;
-  margin-left: 59px;
-  color: bisque;
-  text-align: justify;
-  text-decoration: cadetblue;
-  font-size: 18px;
-  letter-spacing: 3px;
-}
-
-.ypresLogo {
-  width: 10%;
-  }
-
-
-.body-3 {
-  color: blanchedalmond;
-  background-color: rosybrown;
-  font-family: "Poppins", sans-serif;;
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3rem;
-  width: 100%;
-}
-
-.h-1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 2rem;
-  font-weight: 250;
-  padding: 24px 71px 18px 0;
-  margin-bottom: 2rem;
-  float: left;
-  margin-left: 4rem;
+footer,
+.redes a {
+  text-decoration: none;
+  color: #B1CB08;
+  padding: 20px;
+  text-align: center;
   justify-content: center;
 }
 
-.h1-1 {
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  margin-left: 0.6rem;
-  font-family: "uuc", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  padding: 8px 21px 22px 10px;
-  margin-bottom: 1rem;
-  justify-content: center;
-  color: #191919;
-}
-
-/*...... Formulario........ */
-
-.speaker-form-header {
-  text-align: center;
-  background-color: slategrey;
-  border: 1px solid slateblue;
-  border-radius: 3px;
-  width: 60%;
-  margin: 40px 0;
-  padding: 50px;
-  margin-top: -2rem;
-}
-
-.speaker.form {
-  background-color: floralwhite;
-  width: 74%;
-  padding: 50px;
-  margin: 0 0 40px 0;
-}
-
-.form-row input [type=text],
-.form-row input [type=email] {
-  background-color: gainsboro;
-  border: 1px solid bisque;
-  border-radius: 3px;
-  width: 100%;
-  padding: 7px;
-  font-size: 14px;
-}
-
-.form-row input [type=text] :invalid .form-row input [type=email] :invalid {
-  border: 2px solid goldenrod;
-}
-
-.form-row select {
-  width: 100%;
-  padding: 5px;
-}
-
-.form-row textarea {
-  resize: none;
-  min-height: 200px;
-  width: 100%;
-}
-
-.form-row button {
-  font-size: 16px;
-  font-weight: bold;
-  background-color: royalblue;
-  border: none;
-  border-radius: 3px;
-  padding: 10px 40px;
-  cursor: pointer;
-}
-
-@media only screen and (min-width:300px) and (max-width:620px) {
-  .ypresLogo {
-    width: 20%;
-    justify-content: center;
-    margin-top: -1rem;
-    margin-left: 15rem;
-}
-  }
-  .speaker-form-header {
-    text-align: center;
-    background-color: slategrey;
-    border: 1px solid slateblue;
-    border-radius: 3px;
-    width: 82%;
-  
-}
-.ypresDiv {
-  max-width: 100%;
-}
-
-.pypres {
-  text-align: center;
-  margin-top: 45px
-}
-
-
-/*..........Fin.............*/
 /*Nesting o anidamiento Home Index*/
 .full-body {
   background: linear-gradient(to right, #1e5737, #487c58);
@@ -279,8 +140,7 @@ h3 {
 
 /* ...........................MediaQuerie............................ */
 /*Cel mobile*/
-@media only screen and (min-width:100px) and (max-width: 400px) {
-  
+@media only screen and (min-width: 100px) and (max-width: 400px) {
   .nav-pills .nav-link {
     margin-block-start: -1.2rem;
     display: flex;
@@ -298,21 +158,15 @@ h3 {
     margin-top: 5rem;
     margin-left: 5rem;
     height: auto;
-}
-
+  }
 
   .carrousel-indicators li {
     float: left;
     height: auto;
   }
-
-  
 }
-
 /*______ Tablet mobile__________ */
-@media only screen and (min-width: 400px) and (max-width:585px) {
-  
-
+@media only screen and (min-width: 400px) and (max-width: 585px) {
   .nav-pills .nav-link {
     margin-block-start: -1.2rem;
     display: flex;
@@ -330,16 +184,14 @@ h3 {
     margin-top: 6rem;
     margin-left: 7rem;
     height: auto;
-}
+  }
+
   .carrousel-indicators li {
     float: left;
     height: auto;
   }
-
-
 }
-@media only screen and (min-width: 586px) and (max-width:766px) {
-
+@media only screen and (min-width: 586px) and (max-width: 766px) {
   .nav-pills .nav-link {
     margin-block-start: -1.2rem;
     display: flex;
@@ -357,16 +209,15 @@ h3 {
     margin-top: 6rem;
     margin-left: 7rem;
     height: auto;
-}
+  }
+
   .carrousel-indicators li {
     float: left;
     height: auto;
   }
-
 }
 /*__________ Mini desktop__________ */
-@media only screen and (min-width: 766px) and (max-width:1200px) {
-
+@media only screen and (min-width: 766px) and (max-width: 1200px) {
   .nav-pills .nav-link {
     margin-block-start: -1.2rem;
     display: flex;
@@ -384,17 +235,14 @@ h3 {
     margin-top: 3rem;
     margin-left: 19rem;
     height: auto;
-}
+  }
+
   .carrousel-indicators li {
     float: left;
     height: auto;
   }
-
 }
-
-
 /* ....................................................................... */
-
 .container-carru {
   vertical-align: baseline;
   margin: 0 auto;
@@ -405,16 +253,6 @@ h3 {
   box-sizing: content-box;
   height: auto;
 }
-
-footer,
-.redes a {
-  text-decoration: none;
-  color: #B1CB08;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-}
-
 
 /*....... INICIO............ */
 .contenedorPrincipal {
@@ -485,7 +323,6 @@ footer {
   text-decoration: none;
   color: #B1CB08;
   padding: 30px;
-  
 }
 
 .a6 {
@@ -497,11 +334,10 @@ footer {
 .h4 {
   font-size: 1.5rem;
   margin-top: 2rem;
-     display: flex;
+  display: flex;
   justify-content: center;
   text-decoration: none;
 }
-
 
 footer,
 .redes a {
@@ -527,13 +363,150 @@ a {
   padding: 10px;
 }
 
-
 @media only screen and (min-width: 150px) and (max-width: 766px) {
-  
   .d-sm-block, .d-lg-none, .bg-dark {
     margin-top: -40.5rem;
   }
 }
+/*# sourceMappingURL=style.css.map */
+/* __--Acerca de Ypres--__ */
+.h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding: 8px;
+  margin: 33px;
+  margin-left: 59px;
+  color: bisque;
+  text-align: justify;
+  text-decoration: cadetblue;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
 
+.ypresLogo {
+  width: 10%;
+}
+
+.body-3 {
+  color: blanchedalmond;
+  background-color: rosybrown;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.h-1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: 250;
+  padding: 24px 71px 18px 0;
+  margin-bottom: 2rem;
+  float: left;
+  margin-left: 4rem;
+  justify-content: center;
+}
+
+.h1-1 {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-left: 0.6rem;
+  font-family: "uuc", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 8px 21px 22px 10px;
+  margin-bottom: 1rem;
+  justify-content: center;
+  color: #191919;
+}
+
+/*...... Formulario........ */
+.speaker-form-header {
+  text-align: center;
+  background-color: slategrey;
+  border: 1px solid slateblue;
+  border-radius: 3px;
+  width: 60%;
+  margin: 40px 0;
+  padding: 50px;
+  margin-top: -2rem;
+}
+
+.speaker.form {
+  background-color: floralwhite;
+  width: 74%;
+  padding: 50px;
+  margin: 0 0 40px 0;
+}
+
+.form-row input [type=text],
+.form-row input [type=email] {
+  background-color: gainsboro;
+  border: 1px solid bisque;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row input [type=text] :invalid .form-row input [type=email] :invalid {
+  border: 2px solid goldenrod;
+}
+
+.form-row select {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-row textarea {
+  resize: none;
+  min-height: 200px;
+  width: 100%;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: royalblue;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 620px) {
+  .ypresLogo {
+    width: 20%;
+    justify-content: center;
+    margin-top: -1rem;
+    margin-left: 15rem;
+  }
+}
+.speaker-form-header {
+  text-align: center;
+  background-color: slategrey;
+  border: 1px solid slateblue;
+  border-radius: 3px;
+  width: 82%;
+}
+
+.ypresDiv {
+  max-width: 100%;
+}
+
+.pypres {
+  text-align: center;
+  margin-top: 45px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */
