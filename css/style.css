@@ -1,76 +1,75 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 /* HOME ARTISTAS */
+#facilities {
+  background: rosybrown;
+  padding: 30px 0px;
+}
+
+#facilities h1 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-left: -15px;;
+  padding: bottom 5px; 
+}
+
+.title {
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.title p {
+  font-size: 18px;
+  margin-left: -16px;
+}
+
+.card-body {
+  box-shadow: 0px 0 20px 7px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  margin: 20px 10px;
+}
+
+.card-body a {
+  color: #487c58;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: auto;
+  font-weight: 600;
+}
+
+.card-body a:hover {
+  color: #3bc777;
+  border: 1px solid #191919;
+}
 
 .bodies {
   background-color: rosybrown;
 }
 
-/* Container */
-.principal {
-  margin-top: 90px;
-  font-family: 'Times New Roman', Times, serif;
- 
+.card-img-top {
+  margin-left: 1rem;
+  width: 90%;
+  border: solid 2px #191919 ;
 }
 
-/* Tarjet 1 */
-.card-header-first {
-  margin-top: -40px;
-  height: 120px;
-  background: linear-gradient(-90deg, #BF019F, #F2BA57);
-  box-shadow: 1px 5px 15px #a2a2a2;
-}
-
-/* Tarjet 2 */
-
-.card-header-second {
-  box-shadow: 11px 7px 15px #a2a2a2;
-  margin: -25px -25px 0px -25px;
-  height: 120px;
-  background: linear-gradient(-90deg, #8E2DE2, #4a00e0);
-}
-
-/* Tarjet 3 */
-
-.card-header-third {
-  margin-top: -25px;
-  height: 120px;
-  box-shadow: 1px 5px 15px #a2a2a2;
-  background: linear-gradient(-90deg, #11998e, #38efd7);
-}
-
-.card-section {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 16), 0 2px 16px 0 rgba(0, 0, 0, 12);
-}
-
-.card-section:hover {
-  box-shadow: 1px 20px #d2d2d2;
-}
-
-.container-button {
-  display: flex;
-  justify-content: center;
-  border: 1.6px solid black;
-}
-
-.h1artistas {
-  margin-left: 3rem;
-  justify-content: center;
-  font-family: "Poppins", sans-serif;
-  display: block;
-}
-
-
-@media only screen and (min-width:965px) and (max-width: 1600px) 
-{  
-  .imagenArtistas {
-    position: relative; 
+@media only screen and (min-width:300px) and (max-width:500) {
+  #facilities h1 {
+    font-size: 25px;
   }
+
 }
-
-
 
 
 /* -----__---Fin Artistas--__-------- */
+
 
 
 /* __--Acerca de Ypres--__ */
@@ -127,6 +126,8 @@
   justify-content: center;
   color: #191919;
 }
+
+/*...... Formulario........ */
 
 .speaker-form-header {
   text-align: center;
@@ -201,6 +202,11 @@
   max-width: 100%;
 }
 
+.pypres {
+  text-align: center;
+  margin-top: 45px
+}
+
 
 /*..........Fin.............*/
 /*Nesting o anidamiento Home Index*/
@@ -221,6 +227,7 @@ h1 {
   margin-bottom: 2rem;
 }
 
+/* .......navbar.......... */
 .nav-pills .nav-link {
   border: 3px solid #8e1e92a9;
   margin-bottom: 3rem;
@@ -271,9 +278,9 @@ h3 {
 }
 
 /* ...........................MediaQuerie............................ */
-@media only screen and (min-width: 320px) and (max-width: 960px) {
-
-
+/*Cel mobile*/
+@media only screen and (min-width:100px) and (max-width: 400px) {
+  
   .nav-pills .nav-link {
     margin-block-start: -1.2rem;
     display: flex;
@@ -282,13 +289,28 @@ h3 {
     align-items: center;
   }
 
+  h1 {
+    margin-left: -5rem;
+  }
+
+  img {
+    width: 60%;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    height: auto;
+}
+
+
   .carrousel-indicators li {
     float: left;
     height: auto;
   }
+
+  
 }
-/*Cel mobile*/
-@media only screen and (max-width: 965px) {
+
+/*______ Tablet mobile__________ */
+@media only screen and (min-width: 400px) and (max-width:585px) {
   
 
   .nav-pills .nav-link {
@@ -304,19 +326,73 @@ h3 {
   }
 
   img {
-    width: 55%;
-    margin-top: 5rem;
-    margin-left: 6rem;
+    width: 50%;
+    margin-top: 6rem;
+    margin-left: 7rem;
     height: auto;
-  }
-
+}
   .carrousel-indicators li {
     float: left;
     height: auto;
   }
 
-  
+
 }
+@media only screen and (min-width: 586px) and (max-width:766px) {
+
+  .nav-pills .nav-link {
+    margin-block-start: -1.2rem;
+    display: flex;
+    padding-left: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    margin-left: -5rem;
+  }
+
+  img {
+    width: 50%;
+    margin-top: 6rem;
+    margin-left: 7rem;
+    height: auto;
+}
+  .carrousel-indicators li {
+    float: left;
+    height: auto;
+  }
+
+}
+/*__________ Mini desktop__________ */
+@media only screen and (min-width: 766px) and (max-width:1200px) {
+
+  .nav-pills .nav-link {
+    margin-block-start: -1.2rem;
+    display: flex;
+    padding-left: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    margin-left: -5rem;
+  }
+
+  img {
+    width: 36%;
+    margin-top: 3rem;
+    margin-left: 19rem;
+    height: auto;
+}
+  .carrousel-indicators li {
+    float: left;
+    height: auto;
+  }
+
+}
+
+
 /* ....................................................................... */
 
 .container-carru {
@@ -339,8 +415,8 @@ footer,
   justify-content: center;
 }
 
-/* INICIO */
 
+/*....... INICIO............ */
 .contenedorPrincipal {
   background-color: #111111;
   display: grid;
@@ -351,12 +427,6 @@ footer,
   grid-row-gap: 2rem;
   height: 100vh;
 }
-
-.contenedorPaginación {
-  background-color: #191919;
-}
-
-
 
 .menu {
   padding: 10px;
@@ -415,21 +485,21 @@ footer {
   text-decoration: none;
   color: #B1CB08;
   padding: 30px;
-
+  
 }
 
 .a6 {
   justify-content: center;
   font-size: 2rem;
-  text-decoration: none;
   list-style: none;
 }
 
-.h4, h4 {
+.h4 {
   font-size: 1.5rem;
   margin-top: 2rem;
      display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 
 
@@ -457,30 +527,11 @@ a {
   padding: 10px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
-@media only screen and (min-width: 350px) and (max-width: 848px) {
-  .imagenEstilos {
-    width: 160%;
-    height: auto;
-    padding: 20px;
-    margin-left: 0.6rem;
-    margin: 8px;
-    border: 2px solid springgreen;
-  }
-
-  .parrafoEstilo {
-    padding: 22px;
-    text-align: justify;
-  }
-
-  .parrafoEstilo {
-    margin: 2rem;
+@media only screen and (min-width: 150px) and (max-width: 766px) {
+  
+  .d-sm-block, .d-lg-none, .bg-dark {
+    margin-top: -40.5rem;
   }
 }
 
