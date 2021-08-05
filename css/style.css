@@ -1,524 +1,566 @@
 /* HOME ARTISTAS */
 #facilities {
-    background: rosybrown;
-    padding: 30px 0px;
-  }
-  
+  background: rosybrown;
+  padding: 30px 0px;
+}
+
+#facilities h1 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-left: -15px;
+  padding: bottom 5px;
+}
+
+.title {
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.title p {
+  font-size: 18px;
+  margin-left: -16px;
+}
+
+.card-body {
+  box-shadow: 0px 0 20px 7px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  margin: 20px 10px;
+}
+
+.card-body a {
+  color: #487c58;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: auto;
+  font-weight: 600;
+}
+
+.card-body a:hover {
+  color: #3bc777;
+  border: 1px solid #191919;
+}
+
+.bodies {
+  background-color: rosybrown;
+}
+
+.card-img-top {
+  margin-left: 1rem;
+  width: 90%;
+  border: solid 2px #191919;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500) {
   #facilities h1 {
-    font-weight: 600;
-    font-size: 32px;
-    margin-left: -15px;
-    padding: bottom 5px;
+    font-size: 25px;
   }
-  
-  .title {
-    text-align: center;
-    padding: 25px 0px;
-  }
-  
-  .title p {
-    font-size: 18px;
-    margin-left: -16px;
-  }
-  
-  .card-body {
-    box-shadow: 0px 0 20px 7px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card {
-    margin: 20px 10px;
-  }
-  
-  .card-body a {
-    color: #487c58;
-    text-decoration: none;
-    font-size: 15px;
-    margin-top: auto;
-    font-weight: 600;
-  }
-  
-  .card-body a:hover {
-    color: #3bc777;
-    border: 1px solid #191919;
-  }
-  
-  .bodies {
-    background-color: rosybrown;
-  }
-  
-  .card-img-top {
-    margin-left: 1rem;
-    width: 90%;
-    border: solid 2px #191919;
-  }
-  
-  @media only screen and (min-width: 300px) and (max-width: 500) {
-    #facilities h1 {
-      font-size: 25px;
-    }
-  }
-  /* -----__---Fin Artistas--__-------- */
-  footer,
-  .redes a {
-    text-decoration: none;
-    color: #B1CB08;
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  /*Nesting o anidamiento Home Index*/
-  .full-body {
-    background: linear-gradient(to right, #1e5737, #487c58);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  h1 {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 2rem;
-    margin-left: 22.5rem;
-    font-weight: 250;
-    padding: 24px 88px 22px 124px;
-    margin-bottom: 2rem;
-  }
-  
-  /* .......navbar.......... */
+}
+/* -----__---Fin Artistas--__-------- */
+footer,
+.redes a {
+  text-decoration: none;
+  color: #b1cb08;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+/*Nesting o anidamiento Home Index*/
+.full-body {
+  background: linear-gradient(to right, #1e5737, #487c58);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  margin-left: 22.5rem;
+  font-weight: 250;
+  padding: 24px 88px 22px 124px;
+  margin-bottom: 2rem;
+}
+
+/* .......navbar.......... */
+.nav-pills .nav-link {
+  border: 3px solid #8e1e92a9;
+  margin-bottom: 3rem;
+  color: blanchedalmond;
+  top: 0%;
+  z-index: 1111;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+nav {
+  margin-top: -4.5rem;
+}
+
+.container-nav {
+  height: 100px;
+  transition: height 1s;
+}
+
+.container-nav:hover {
+  height: 140px;
+}
+
+img {
+  margin-top: 3rem;
+  margin-left: 29.5rem;
+  margin-bottom: 5rem;
+  vertical-align: middle;
+  border-style: none;
+  border-radius: 6px;
+  overflow: hidden;
+  height: auto;
+}
+
+.carrousel {
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin: 0.5rem;
+  letter-spacing: 0.5px;
+  text-align: left;
+  font-family: "Helvetica Neue";
+  text-transform: uppercase;
+  border-color: #ddd;
+  color: #191919;
+}
+
+/* ...........................MediaQuerie............................ */
+/*Cel mobile*/
+@media only screen and (min-width: 100px) and (max-width: 400px) {
   .nav-pills .nav-link {
-    border: 3px solid #8e1e92a9;
-    margin-bottom: 3rem;
-    color: blanchedalmond;
-    top: 0%;
-    z-index: 1111;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-  }
-  
-  nav {
-    margin-top: -4.5rem;
-  }
-  
-  .container-nav {
-    height: 100px;
-    transition: height 1s;
-  }
-  
-  .container-nav:hover {
-    height: 140px;
-  }
-  
-  img {
-    margin-top: 3rem;
-    margin-left: 29.5rem;
-    margin-bottom: 5rem;
-    vertical-align: middle;
-    border-style: none;
-    border-radius: 6px;
-    overflow: hidden;
-    height: auto;
-  }
-  
-  .carrousel {
-    margin: 0 auto;
-  }
-  
-  h3 {
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 1px;
-    padding: 40px 0 20px 5px;
-    font-family: "Helvetica Neue";
-    text-transform: uppercase;
-    border-color: #ddd;
-    color: #191919;
-  }
-  
-  /* ...........................MediaQuerie............................ */
-  /*Cel mobile*/
-  @media only screen and (min-width: 100px) and (max-width: 400px) {
-    .nav-pills .nav-link {
-      margin-block-start: -1.2rem;
-      display: flex;
-      padding-left: 3rem;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    h1 {
-      margin-left: -5rem;
-    }
-  
-    img {
-      width: 60%;
-      margin-top: 5rem;
-      margin-left: 5rem;
-      height: auto;
-    }
-  
-    .carrousel-indicators li {
-      float: left;
-      height: auto;
-    }
-  }
-  /*______ Tablet mobile__________ */
-  @media only screen and (min-width: 400px) and (max-width: 585px) {
-    .nav-pills .nav-link {
-      margin-block-start: -1.2rem;
-      display: flex;
-      padding-left: 3rem;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    h1 {
-      margin-left: -5rem;
-    }
-  
-    img {
-      width: 50%;
-      margin-top: 6rem;
-      margin-left: 7rem;
-      height: auto;
-    }
-  
-    .carrousel-indicators li {
-      float: left;
-      height: auto;
-    }
-  }
-  @media only screen and (min-width: 586px) and (max-width: 766px) {
-    .nav-pills .nav-link {
-      margin-block-start: -1.2rem;
-      display: flex;
-      padding-left: 3rem;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    h1 {
-      margin-left: -5rem;
-    }
-  
-    img {
-      width: 50%;
-      margin-top: 6rem;
-      margin-left: 7rem;
-      height: auto;
-    }
-  
-    .carrousel-indicators li {
-      float: left;
-      height: auto;
-    }
-  }
-  /*__________ Mini desktop__________ */
-  @media only screen and (min-width: 766px) and (max-width: 1200px) {
-    .nav-pills .nav-link {
-      margin-block-start: -1.2rem;
-      display: flex;
-      padding-left: 3rem;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    h1 {
-      margin-left: -5rem;
-    }
-  
-    img {
-      width: 36%;
-      margin-top: 3rem;
-      margin-left: 19rem;
-      height: auto;
-    }
-  
-    .carrousel-indicators li {
-      float: left;
-      height: auto;
-    }
-  }
-  /* ....................................................................... */
-  .container-carru {
-    vertical-align: baseline;
-    margin: 0 auto;
-  }
-  
-  .carousel-indicators li {
-    background-clip: padding-box;
-    box-sizing: content-box;
-    height: auto;
-  }
-  
-  footer,
-  .redes a {
-    text-decoration: none;
-    color: #B1CB08;
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  
-  
-  
-  
-  /*....... INICIO............ */
-  .contenedorPrincipal {
-    background-color: #111111;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "menu menu menu" "imagen1 contenido1 imagen2" "imagen1 contenido2 imagen2" "footer footer footer";
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem;
-    height: 100vh;
-  }
-  
-  
-  
-  .menu {
-    padding: 10px;
-    grid-area: menu;
-    height: 50px;
-    background-color: #191919;
-    color: #B1CB08;
-  }
-  
-  .imagen1 {
-    grid-area: imagen1;
-    background-color: #191919;
-    padding: 2rem;
-  }
-  
-  .imagen2 {
-    grid-area: imagen2;
-    background-color: #191919;
-    padding: 2rem;
-  }
-  
-  .contenido1 {
-    grid-area: contenido1;
-    background-color: #191919;
-    color: #B1CB08;
-  }
-  
-  .contenido2 {
-    grid-area: contenido2;
-    background-color: #191919;
-    color: #B1CB08;
-  }
-  
-  footer {
-    grid-area: footer;
-    background-color: #191919;
-  }
-  
-  .parrafoEstilo {
-    padding: 30px;
-    text-align: justify;
-    align-items: flex-start;
-  }
-  
-  .parrafoEstilo:hover {
-    background-color: #913e52;
-    opacity: 0.8;
-  }
-  
-  .tituloEstilo {
-    padding: 30px;
-    text-decoration: line-through;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color: #B1CB08;
-    padding: 30px;
-  }
-  
-  .a6 {
-    justify-content: center;
-    font-size: 2rem;
-    list-style: none;
-  }
-  
-  .h4 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-block-start: -1.2rem;
     display: flex;
+    padding-left: 3rem;
     justify-content: center;
-    text-decoration: none;
-  }
-  
-  footer,
-  .redes a {
-    text-decoration: none;
-    color: #B1CB08;
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .imagenEstilos {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    margin: 0 auto;
-    margin-left: 0.6rem;
-    margin: 8px;
-    border: 2px solid springgreen;
-    margin-left: 0rem;
-  }
-  
-  a {
-    padding: 10px;
-  }
-  
-  @media only screen and (min-width: 150px) and (max-width: 766px) {
-    .d-sm-block, .d-lg-none, .bg-dark {
-      margin-top: -40.5rem;
-    }
-  }
-  /*# sourceMappingURL=style.css.map */
-  /* __--Acerca de Ypres--__ */
-  .h2 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    padding: 8px;
-    margin: 33px;
-    margin-left: 59px;
-    color: bisque;
-    text-align: justify;
-    text-decoration: cadetblue;
-    font-size: 18px;
-    letter-spacing: 3px;
-  }
-  
-  .ypresLogo {
-    width: 10%;
-  }
-  
-  .body-3 {
-    color: blanchedalmond;
-    background-color: rosybrown;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
-    width: 100%;
   }
-  
-  .h-1 {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 2rem;
-    font-weight: 250;
-    padding: 24px 71px 18px 0;
-    margin-bottom: 2rem;
-    float: left;
-    margin-left: 4rem;
-    justify-content: center;
+
+  h1 {
+    margin-left: -5rem;
   }
-  
-  .h1-1 {
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin-left: 0.6rem;
-    font-family: "uuc", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    padding: 8px 21px 22px 10px;
-    margin-bottom: 1rem;
-    justify-content: center;
-    color: #191919;
-  }
-  
-  /*...... Formulario........ */
-  .speaker-form-header {
-    text-align: center;
-    background-color: slategrey;
-    border: 1px solid slateblue;
-    border-radius: 3px;
+
+  img {
     width: 60%;
-    margin: 40px 0;
-    padding: 50px;
-    margin-top: -2rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    height: auto;
   }
-  
-  .speaker.form {
-    background-color: floralwhite;
-    width: 74%;
-    padding: 50px;
-    margin: 0 0 40px 0;
+
+  .carrousel-indicators li {
+    float: left;
+    height: auto;
   }
-  
-  .form-row input [type=text],
-  .form-row input [type=email] {
-    background-color: gainsboro;
-    border: 1px solid bisque;
-    border-radius: 3px;
-    width: 100%;
-    padding: 7px;
-    font-size: 14px;
+  .about-services {
+    display: none;
   }
-  
-  .form-row input [type=text] :invalid .form-row input [type=email] :invalid {
-    border: 2px solid goldenrod;
-  }
-  
-  .form-row select {
-    width: 100%;
-    padding: 5px;
-  }
-  
-  .form-row textarea {
-    resize: none;
-    min-height: 200px;
-    width: 100%;
-  }
-  
-  .form-row button {
-    font-size: 16px;
-    font-weight: bold;
-    background-color: royalblue;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 40px;
-    cursor: pointer;
-  }
-  
-  @media only screen and (min-width: 300px) and (max-width: 620px) {
-    .ypresLogo {
-      width: 20%;
-      justify-content: center;
-      margin-top: -1rem;
-      margin-left: 15rem;
-    }
-  }
-  .speaker-form-header {
+  footer,
+  .redes a {
+    text-decoration: none;
+    color: #b1cb08;
+    padding: 20px;
     text-align: center;
-    background-color: slategrey;
-    border: 1px solid slateblue;
-    border-radius: 3px;
-    width: 82%;
+    justify-content: center;
+    margin-top: 10rem;
   }
-  
-  .ypresDiv {
-    max-width: 100%;
+}
+/*______ Tablet mobile__________ */
+@media only screen and (min-width: 400px) and (max-width: 585px) {
+  .nav-pills .nav-link {
+    margin-block-start: -1.2rem;
+    display: flex;
+    padding-left: 3rem;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .pypres {
-    text-align: center;
-    margin-top: 45px;
+
+  h1 {
+    margin-left: -5rem;
   }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+
+  img {
+    width: 50%;
+    margin-top: 6rem;
+    margin-left: 7rem;
+    height: auto;
   }
-  
-  /*# sourceMappingURL=style.css.map */
+
+  .carrousel-indicators li {
+    float: left;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 586px) and (max-width: 766px) {
+  .nav-pills .nav-link {
+    margin-block-start: -1.2rem;
+    display: flex;
+    padding-left: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    margin-left: -5rem;
+  }
+
+  img {
+    width: 50%;
+    margin-top: 6rem;
+    margin-left: 7rem;
+    height: auto;
+  }
+
+  .carrousel-indicators li {
+    float: left;
+    height: auto;
+  }
+}
+/*__________ Mini desktop__________ */
+@media only screen and (min-width: 766px) and (max-width: 1200px) {
+  .nav-pills .nav-link {
+    margin-block-start: -1.2rem;
+    display: flex;
+    padding-left: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    margin-left: -5rem;
+  }
+
+  img {
+    width: 36%;
+    margin-top: 3rem;
+    margin-left: 19rem;
+    height: auto;
+  }
+
+  .carrousel-indicators li {
+    float: left;
+    height: auto;
+  }
+}
+/* ....................................................................... */
+.container-carru {
+  vertical-align: baseline;
+  margin: 0 auto;
+}
+
+.carousel-indicators li {
+  background-clip: padding-box;
+  box-sizing: content-box;
+  height: auto;
+}
+
+/*  Our team */
+.about-services {
+  padding-bottom: 30px;
+  overflow-x: hidden;
+  width: 98%;
+  padding: 1rem;
+}
+
+.servicio-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicio-ind {
+  width: 28%;
+  text-align: center;
+}
+
+.servicio-ind img {
+  width: 90%;
+  margin-left: 1rem;
+}
+
+.servicio-ind h4 {
+  margin: 10px 0;
+}
+
+.servicio-ind p {
+  font-weight: 300;
+  text-align: justify;
+}
+/* -------------------- */
+footer,
+.redes a {
+  text-decoration: none;
+  color: #b1cb08;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+/*....... INICIO............ */
+.contenedorPrincipal {
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "menu menu menu" "imagen1 contenido1 imagen2" "imagen1 contenido2 imagen2" "footer footer footer";
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  height: 100vh;
+}
+
+.menu {
+  padding: 10px;
+  grid-area: menu;
+  height: 50px;
+  background-color: #191919;
+  color: #b1cb08;
+}
+
+.imagen1 {
+  grid-area: imagen1;
+  background-color: #191919;
+  padding: 2rem;
+}
+
+.imagen2 {
+  grid-area: imagen2;
+  background-color: #191919;
+  padding: 2rem;
+}
+
+.contenido1 {
+  grid-area: contenido1;
+  background-color: #191919;
+  color: #b1cb08;
+}
+
+.contenido2 {
+  grid-area: contenido2;
+  background-color: #191919;
+  color: #b1cb08;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #191919;
+}
+
+.parrafoEstilo {
+  padding: 30px;
+  text-align: justify;
+  align-items: flex-start;
+}
+
+.parrafoEstilo:hover {
+  background-color: #913e52;
+  opacity: 0.8;
+}
+
+.tituloEstilo {
+  padding: 30px;
+  text-decoration: line-through;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #b1cb08;
+  padding: 30px;
+}
+
+.a6 {
+  justify-content: center;
+  font-size: 2rem;
+  list-style: none;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+footer,
+.redes a {
+  text-decoration: none;
+  color: #b1cb08;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.imagenEstilos {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+  margin-left: 0.6rem;
+  margin: 8px;
+  border: 2px solid springgreen;
+  margin-left: 0rem;
+}
+
+a {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 766px) {
+  .d-sm-block,
+  .d-lg-none,
+  .bg-dark {
+    margin-top: -40.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+/* __--Acerca de Ypres--__ */
+.h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding: 8px;
+  margin: 33px;
+  margin-left: 59px;
+  color: bisque;
+  text-align: justify;
+  text-decoration: cadetblue;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.ypresLogo {
+  width: 10%;
+}
+
+.body-3 {
+  color: blanchedalmond;
+  background-color: rosybrown;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.h-1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: 250;
+  padding: 24px 71px 18px 0;
+  margin-bottom: 2rem;
+  float: left;
+  margin-left: 4rem;
+  justify-content: center;
+}
+
+.h1-1 {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-left: 0.6rem;
+  font-family: "uuc", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 8px 21px 22px 10px;
+  margin-bottom: 1rem;
+  justify-content: center;
+  color: #191919;
+}
+
+/*...... Formulario........ */
+.speaker-form-header {
+  text-align: center;
+  background-color: slategrey;
+  border: 1px solid slateblue;
+  border-radius: 3px;
+  width: 60%;
+  margin: 40px 0;
+  padding: 50px;
+  margin-top: -2rem;
+}
+
+.speaker.form {
+  background-color: floralwhite;
+  width: 74%;
+  padding: 50px;
+  margin: 0 0 40px 0;
+}
+
+.form-row input [type="text"],
+.form-row input [type="email"] {
+  background-color: gainsboro;
+  border: 1px solid bisque;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row input [type="text"] :invalid .form-row input [type="email"] :invalid {
+  border: 2px solid goldenrod;
+}
+
+.form-row select {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-row textarea {
+  resize: none;
+  min-height: 200px;
+  width: 100%;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: royalblue;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 620px) {
+  .ypresLogo {
+    width: 20%;
+    justify-content: center;
+    margin-top: -1rem;
+    margin-left: 15rem;
+  }
+}
+.speaker-form-header {
+  text-align: center;
+  background-color: slategrey;
+  border: 1px solid slateblue;
+  border-radius: 3px;
+  width: 82%;
+}
+
+.ypresDiv {
+  max-width: 100%;
+}
+
+.pypres {
+  text-align: center;
+  margin-top: 45px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
