@@ -28,16 +28,14 @@
     herramientas, redes, soporte, secciones, forma, significado, imágenes">
 
 
-
   <!-- ..........Open graph............. -->
-
   <meta property="og:type" content="Website">
   <meta property="og:title" content="YPRES sitio web">
   <meta property="og:description" content="Mi página artística">
   <meta property="og:image" content="images/cepillo-de-pintura.png">
   <meta property="og:site_name" content="YPRES">
   <meta property="og:author" content="Franco Carrera">
-  <meta property="og:url" content="file:///C:/Users/RMA/Documents/Mi%20proyecto/YPRES-Carrera/index.html">
+  <meta property="og:url" content="https://franco-carrera.github.io/Proyecto-final-desarrollo-web/">
 
   <!------------ Styles----------------- -->
   <link rel="stylesheet" href="./css/style.css">
@@ -54,62 +52,49 @@
   <title>YPRES</title>
 </head>
 
-
-
-
-<body class="full-body">
-
+<body class="bodyIndex">
 
   <header class="container">
     <!-- Container breakpoint -->
 
-
-    <h1>
-      <a href="../images/logo-1.jpg"></a>
-    </h1>
-
-
-
-    <!-- ---------------------------------______________Inicio Nav________________................................ -->
-
     <div class="divContenedor">
-      <nav class="container-nav">
+      <section class="container-nav">
         <nav class="nav nav-pills flex-column flex-sm-row">
-          <a class="flex-sm-fill text-sm-center nav-link " href="./mis secciones/seccion2.html">Inicio</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="./mis secciones/artistas.html">Artistas</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="./mis secciones/seccion3.html">Acerca de YPRES</a>
+          <a class="flex-sm-fill text-sm-center nav-link" href="./secciones/seccion2.html">Inicio</a>
+          <a class="flex-sm-fill text-sm-center nav-link" href="./secciones/artistas.html">Artistas</a>
+          <a class="flex-sm-fill text-sm-center nav-link" href="./secciones/seccion3.html">Acerca de YPRES</a>
         </nav>
-      </nav>
+      </section>
     </div>
   </header>
 
   <!-- ................................._____________Inicio Carrousel___________........................ -->
 
-  <div class="container-carru ">
+  <section class="container-carru">
     <!--div carru BREAKPOINT-->
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel .d-md-block.">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel d-md-block">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner .d-md-block.">
+      <div class="carousel-inner d-md-block">
         <div class="carousel-item active ">
-          <img src="./images/index-3 (1).jpg" class="d-block w-30" alt="Hecho en grafiti">
+          <img loading="auto" src="./images/index-3 (1).jpg" class="d-block w-30" alt="Hecho en grafiti">
           <div class="carousel-caption d-none d-md-block">
             <h5></h5>
             <p>Hecha en graffiti sobre un mural. Ahora en impresión digital</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/-Pintura-Al-óleo (1).jpg" class="d-block w-30" alt="Hecho en óleo">
+          <img loading="lazy" src="./images/-Pintura-Al-óleo (1).jpg" class="d-block w-30" alt="Hecho en óleo">
           <div class="carousel-caption d-none d-md-block">
             <p>Hecha en óleo sobre témpera</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/image-tela.jpg" class="d-block w-30" alt="Hecha en tela">
+          <img loading="lazy" src="./images/image-tela.jpg" class="d-block w-30" alt="Hecha en tela">
           <div class="carousel-caption d-none d-md-block">
             <p>Pintura de frutas hecha en tela</p>
           </div>
@@ -124,33 +109,37 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+  </section>
 
-    <section class="about-services">
-      <div class="contenedor">
-        <h3>"Pinturas contemporáneas"</h2>
-          <div class="servicio-cont">
-            <div class="servicio-ind">
-              <img src="./images/undraw.svg" alt="">
-              <h4>Empezar</h4>
-              <p>LLuvia de ideas, que le quiero transmitir al que lo vea?</p>
-            </div>
-            <div class="servicio-ind">
-              <img src="./images/drawing.svg" alt="">
-              <h4>Proceso</h4>
-              <p>Primeras bases de mi obra, ubicando contexto y significados</p>
-            </div>
-            <div class="servicio-ind">
-              <img src="./images/online.svg" alt="">
-              <h4>Decisiones finales</h4>
-              <p>Detalles de la pintura, conceptos afianzados, formas finales</p>
-            </div>
+  <section class="about-services">
+    <div class="contenedor">
+      <h3>"Pinturas contemporáneas"</h2>
+        <div class="servicio-cont">
+          <div class="servicio-ind">
+            <img loading="lazy" src="./images/undraw.svg" alt="">
+            <h4>Empezar</h4>
+            <p>LLuvia de ideas, que le quiero transmitir al que lo vea?</p>
           </div>
-      </div>
-    </section>
+          <div class="servicio-ind">
+            <img loading="lazy" src="./images/drawing.svg" alt="">
+            <h4>Proceso</h4>
+            <p>Primeras bases de mi obra, ubicando contexto y significados</p>
+          </div>
+          <div class="servicio-ind">
+            <img loading="lazy" src="./images/online.svg" alt="">
+            <h4>Decisiones finales</h4>
+            <p>Detalles de la pintura, conceptos afianzados, formas finales</p>
+          </div>
+        </div>
+    </div>
+  </section>
 
-    <footer>
+
+
+  <section>
+    <footer class="footer">
       <div class="redes">
-        <a href="https://www.linkedin.com/in/carrera-franco-carrera-8ba991207/" class="linkedin"><i
+        <a href="https://www.linkedin.com/in/franco-carrera-desarrollador-web/" class="linkedin"><i
             class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/Franco-Carrera/Proyecto-final-desarrollo-web" class="github"><i
             class="fab fa-github"></i></a>
@@ -158,21 +147,21 @@
             class="fab fa-behance"></i></a>
       </div>
     </footer>
+  </section>
 
 
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
 
 
 

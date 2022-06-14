@@ -1,11 +1,25 @@
-
-
-* 
-{
-
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.bodyIndex {
+  background: linear-gradient(to right, #1e5737, #487c58);
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  // width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+// * p {
+//   margin-bottom: 0;
+// }

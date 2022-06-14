@@ -1,0 +1,120 @@
+/* __--Acerca de Ypres--__ */
+.h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding: 8px;
+  margin: 33px;
+  margin-left: 59px;
+  color: bisque;
+  text-align: justify;
+  text-decoration: cadetblue;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.ypresLogo {
+  width: 100%;
+}
+
+.body-3 {
+  color: aliceblue;
+  background-color: rosybrown;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.container-speaker-form {
+  padding-bottom: 2em;
+}
+
+.header-ypres {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  .enlace__ypres {
+    width: 3rem;
+    margin-left: 2rem;
+  }
+}
+
+.h-1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: 250;
+  text-align: center;
+}
+
+.h1-1 {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-left: 0.6rem;
+  font-family: "uuc", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  justify-content: center;
+  color: #191919;
+}
+
+/*...... Formulario........ */
+.speaker-form {
+  background-color: gainsboro;
+  color: black;
+  width: 74%;
+  padding: 50px;
+  margin: 0 0 40px 0;
+  .form-row input [type="text"],
+  .form-row input [type="email"] {
+    border: 1px solid bisque;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  .form-row select {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .form-row textarea {
+    resize: none;
+    min-height: 200px;
+    width: 100%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: royalblue;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+}
+
+.speaker-form-header {
+  text-align: center;
+  padding-top: 2em;
+  background-color: slategrey;
+  border: 1px solid slateblue;
+  border-radius: 3px;
+  padding: 42px 100px;
+}
+
+#trucazo {
+  opacity: 0;
+}
+
+.form-row input [type="text"] :invalid .form-row input [type="email"] :invalid {
+  border: 2px solid goldenrod;
+}
+
+.pypres {
+  text-align: center;
+  margin-top: 45px;
+}

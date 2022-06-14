@@ -1,127 +1,45 @@
-/* HOME ARTISTAS */
-#facilities {
-  background: rosybrown;
-  padding: 30px 0px;
-}
-
-#facilities h1 {
-  font-weight: 600;
-  font-size: 32px;
-  margin-left: -15px;
-  padding: bottom 5px;
-}
-
-.title {
-  text-align: center;
-  padding: 25px 0px;
-}
-
-.title p {
-  font-size: 18px;
-  margin-left: -16px;
-}
-
-.card-body {
-  box-shadow: 0px 0 20px 7px rgba(0, 0, 0, 0.1);
-}
-
-.card {
-  margin: 20px 10px;
-}
-
-.card-body a {
-  color: #487c58;
-  text-decoration: none;
-  font-size: 15px;
-  margin-top: auto;
-  font-weight: 600;
-}
-
-.card-body a:hover {
-  color: #3bc777;
-  border: 1px solid #191919;
-}
-
-.bodies {
-  background-color: rosybrown;
-}
-
-.card-img-top {
-  margin-left: 1rem;
-  width: 90%;
-  border: solid 2px #191919;
-}
-
-@media only screen and (min-width: 300px) and (max-width: 500) {
-  #facilities h1 {
-    font-size: 25px;
-  }
-}
-/* -----__---Fin Artistas--__-------- */
-footer,
-.redes a {
-  text-decoration: none;
-  color: #b1cb08;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-}
-
+/*Variables*/
 /*Nesting o anidamiento Home Index*/
-.full-body {
-  background: linear-gradient(to right, #1e5737, #487c58);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 2rem;
-  margin-left: 22.5rem;
-  font-weight: 250;
-  padding: 24px 88px 22px 124px;
-  margin-bottom: 2rem;
-}
-
 /* .......navbar.......... */
-.nav-pills .nav-link {
-  border: 3px solid #8e1e92a9;
-  margin-bottom: 3rem;
-  color: blanchedalmond;
-  top: 0%;
-  z-index: 1111;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-}
-
-nav {
-  margin-top: -4.5rem;
-}
-
 .container-nav {
   height: 100px;
   transition: height 1s;
+}
+.container-nav .nav {
+  line-height: 1.5s;
+}
+.container-nav .nav .nav-link {
+  display: inline-block;
+  border: 3px solid #8e1e92a9;
+  color: #fff;
+  z-index: 1111;
+  text-align: center;
 }
 
 .container-nav:hover {
   height: 140px;
 }
 
-img {
-  margin-top: 3rem;
-  margin-left: 29.5rem;
-  margin-bottom: 5rem;
-  vertical-align: middle;
-  border-style: none;
-  border-radius: 6px;
-  overflow: hidden;
-  height: auto;
+.divContenedor {
+  padding-top: 5.5vh;
 }
 
-.carrousel {
-  margin: 0 auto;
+/********Carousel************/
+.container-carru {
+  padding-bottom: 1.8rem;
+}
+
+.carousel-item img {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carousel-caption p {
+  margin-bottom: 0;
 }
 
 h3 {
@@ -138,17 +56,14 @@ h3 {
 
 /* ...........................MediaQuerie............................ */
 /*Cel mobile*/
-@media only screen and (min-width: 100px) and (max-width: 400px) {
-  .nav-pills .nav-link {
-    margin-block-start: -1.2rem;
-    display: flex;
-    padding-left: 3rem;
-    justify-content: center;
-    align-items: center;
+@media only screen and (min-width: 100px) and (max-width: 609px) {
+  .about-services {
+    display: none;
   }
 
-  h1 {
-    margin-left: -5rem;
+  .container-carru {
+    max-height: 300px;
+    padding-top: 75px;
   }
 
   img {
@@ -158,115 +73,29 @@ h3 {
     height: auto;
   }
 
-  .carrousel-indicators li {
-    float: left;
-    height: auto;
-  }
-  .about-services {
-    display: none;
-  }
   footer,
-  .redes a {
+.redes a {
     text-decoration: none;
     color: #b1cb08;
     padding: 20px;
     text-align: center;
     justify-content: center;
-    margin-top: 10rem;
+  }
+
+  .footer {
+    position: relative;
+    top: 194px;
   }
 }
 /*______ Tablet mobile__________ */
-@media only screen and (min-width: 400px) and (max-width: 585px) {
-  .nav-pills .nav-link {
-    margin-block-start: -1.2rem;
-    display: flex;
-    padding-left: 3rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  h1 {
-    margin-left: -5rem;
-  }
-
-  img {
-    width: 50%;
-    margin-top: 6rem;
-    margin-left: 7rem;
-    height: auto;
-  }
-
-  .carrousel-indicators li {
-    float: left;
-    height: auto;
-  }
-}
-@media only screen and (min-width: 586px) and (max-width: 766px) {
-  .nav-pills .nav-link {
-    margin-block-start: -1.2rem;
-    display: flex;
-    padding-left: 3rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  h1 {
-    margin-left: -5rem;
-  }
-
-  img {
-    width: 50%;
-    margin-top: 6rem;
-    margin-left: 7rem;
-    height: auto;
-  }
-
-  .carrousel-indicators li {
-    float: left;
-    height: auto;
-  }
-}
 /*__________ Mini desktop__________ */
-@media only screen and (min-width: 766px) and (max-width: 1200px) {
-  .nav-pills .nav-link {
-    margin-block-start: -1.2rem;
-    display: flex;
-    padding-left: 3rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  h1 {
-    margin-left: -5rem;
-  }
-
+@media only screen and (min-width: 610px) and (max-width: 767px) {
   img {
-    width: 36%;
-    margin-top: 3rem;
-    margin-left: 19rem;
-    height: auto;
-  }
-
-  .carrousel-indicators li {
-    float: left;
-    height: auto;
+    width: 45%;
   }
 }
-/* ....................................................................... */
-.container-carru {
-  vertical-align: baseline;
-  margin: 0 auto;
-}
-
-.carousel-indicators li {
-  background-clip: padding-box;
-  box-sizing: content-box;
-  height: auto;
-}
-
 /*  Our team */
 .about-services {
-  padding-bottom: 30px;
   overflow-x: hidden;
   width: 98%;
   padding: 1rem;
@@ -276,6 +105,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem 1rem;
 }
 
 .servicio-ind {
@@ -286,6 +116,7 @@ h3 {
 .servicio-ind img {
   width: 90%;
   margin-left: 1rem;
+  object-fit: cover;
 }
 
 .servicio-ind h4 {
@@ -294,19 +125,17 @@ h3 {
 
 .servicio-ind p {
   font-weight: 300;
-  text-align: justify;
-}
-/* -------------------- */
-footer,
-.redes a {
-  text-decoration: none;
-  color: #b1cb08;
-  padding: 20px;
   text-align: center;
-  justify-content: center;
 }
 
-/*....... INICIO............ */
+/* -------------------- */
+/*changing*/
+/* INICIO */
+/* h1/inicio */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .contenedorPrincipal {
   background-color: #111111;
   display: grid;
@@ -324,6 +153,11 @@ footer,
   height: 50px;
   background-color: #191919;
   color: #b1cb08;
+}
+
+.menu__list a:hover {
+  color: #b1cb08;
+  border-bottom: 2px solid #487c58;
 }
 
 .imagen1 {
@@ -374,26 +208,17 @@ footer {
 .menu a {
   text-decoration: none;
   color: #b1cb08;
-  padding: 30px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
 }
 
-.a6 {
-  justify-content: center;
-  font-size: 2rem;
-  list-style: none;
-}
-
-.h4 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
+.menu__list {
+  text-align: center;
 }
 
 footer,
 .redes a {
-  text-decoration: none;
   color: #b1cb08;
   padding: 20px;
   text-align: center;
@@ -408,21 +233,155 @@ footer,
   margin-left: 0.6rem;
   margin: 8px;
   border: 2px solid springgreen;
-  margin-left: 0rem;
+  object-fit: cover;
 }
 
-a {
-  padding: 10px;
-}
+@media screen and (min-width: 350px) and (max-width: 770px) {
+  .imagenEstilos {
+    width: 160%;
+    height: auto;
+    padding: 20px;
+    margin-left: 0.6rem;
+    margin: 8px;
+    border: 2px solid springgreen;
+  }
 
-@media only screen and (min-width: 150px) and (max-width: 766px) {
-  .d-sm-block,
-  .d-lg-none,
-  .bg-dark {
-    margin-top: -40.5rem;
+  .parrafoEstilo {
+    padding: 22px;
+    text-align: justify;
+  }
+
+  .parrafoEstilo {
+    margin: 2rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 150px) and (max-width: 766px) {
+  .contenedorPrincipal {
+    height: 0;
+  }
+
+  .mi-display {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mi-display {
+    display: none;
+  }
+
+  .contenedorPrincipal {
+    height: auto;
+  }
+}
+/* HOME ARTISTAS */
+h1,
+h2 {
+  margin: 0;
+}
+
+#facilities {
+  background: rosybrown;
+  padding: 30px 0px;
+}
+
+.container-titles {
+  text-align: center;
+  padding: 25px 0px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+h1 span {
+  transition: 0.5s linear;
+}
+
+h1:hover span:nth-child(2) {
+  margin-right: 14px;
+  margin-left: 7px;
+}
+
+h1:hover span:nth-child(2)::before {
+  content: " ";
+}
+
+h1:hover span:nth-child(1)::before {
+  content: "'";
+}
+
+h1:hover span:nth-child(3)::after {
+  content: "'";
+}
+
+h1:hover span {
+  color: #000;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+h2 .obras-subtitle {
+  font-size: 18px;
+}
+
+.card-body {
+  box-shadow: 0px 0 20px 7px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  margin: 20px 10px;
+}
+
+.card-body a {
+  color: #487c58;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: auto;
+  font-weight: 600;
+}
+
+.card-body a:hover {
+  color: #3bc777;
+  border: 1px solid #191919;
+}
+
+.bodies {
+  background-color: rosybrown;
+}
+
+.container-enlace-artistas {
+  text-align: right;
+}
+.container-enlace-artistas .btn-artistas {
+  outline: none;
+  padding: 1rem;
+  color: #000;
+  border: none;
+  border-radius: 1.2rem;
+}
+.container-enlace-artistas .btn-artistas:hover {
+  text-decoration: underline;
+  color: #3bc777;
+}
+
+.card-img-top {
+  margin: 1rem;
+  width: 90%;
+  border: solid 2px #191919;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500) {
+  #facilities h1 {
+    font-size: 25px;
+  }
+}
+/* -----__---Fin Artistas--__-------- */
 /* __--Acerca de Ypres--__ */
 .h2 {
   font-family: "Times New Roman", Times, serif;
@@ -438,30 +397,38 @@ a {
 }
 
 .ypresLogo {
-  width: 10%;
+  width: 100%;
 }
 
 .body-3 {
-  color: blanchedalmond;
+  color: aliceblue;
   background-color: rosybrown;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
   display: flex;
   flex-direction: column;
+  padding: 1rem 1rem;
   align-items: center;
-  margin-bottom: 3rem;
   width: 100%;
+}
+
+.container-speaker-form {
+  padding-bottom: 2em;
+}
+
+.header-ypres {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.header-ypres .enlace__ypres {
+  width: 3rem;
+  margin-left: 2rem;
 }
 
 .h-1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
   font-weight: 250;
-  padding: 24px 71px 18px 0;
-  margin-bottom: 2rem;
-  float: left;
-  margin-left: 4rem;
-  justify-content: center;
+  text-align: center;
 }
 
 .h1-1 {
@@ -471,57 +438,37 @@ a {
   margin-left: 0.6rem;
   font-family: "uuc", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  padding: 8px 21px 22px 10px;
   margin-bottom: 1rem;
   justify-content: center;
   color: #191919;
 }
 
 /*...... Formulario........ */
-.speaker-form-header {
-  text-align: center;
-  background-color: slategrey;
-  border: 1px solid slateblue;
-  border-radius: 3px;
-  width: 60%;
-  margin: 40px 0;
-  padding: 50px;
-  margin-top: -2rem;
-}
-
-.speaker.form {
-  background-color: floralwhite;
+.speaker-form {
+  background-color: gainsboro;
+  color: black;
   width: 74%;
   padding: 50px;
   margin: 0 0 40px 0;
 }
-
-.form-row input [type="text"],
-.form-row input [type="email"] {
-  background-color: gainsboro;
+.speaker-form .form-row input [type=text],
+.speaker-form .form-row input [type=email] {
   border: 1px solid bisque;
   border-radius: 3px;
   width: 100%;
   padding: 7px;
   font-size: 14px;
 }
-
-.form-row input [type="text"] :invalid .form-row input [type="email"] :invalid {
-  border: 2px solid goldenrod;
-}
-
-.form-row select {
+.speaker-form .form-row select {
   width: 100%;
   padding: 5px;
 }
-
-.form-row textarea {
+.speaker-form .form-row textarea {
   resize: none;
   min-height: 200px;
   width: 100%;
 }
-
-.form-row button {
+.speaker-form .form-row button {
   font-size: 16px;
   font-weight: bold;
   background-color: royalblue;
@@ -531,24 +478,17 @@ a {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 620px) {
-  .ypresLogo {
-    width: 20%;
-    justify-content: center;
-    margin-top: -1rem;
-    margin-left: 15rem;
-  }
-}
 .speaker-form-header {
   text-align: center;
+  padding-top: 2em;
   background-color: slategrey;
   border: 1px solid slateblue;
   border-radius: 3px;
-  width: 82%;
+  padding: 42px 100px;
 }
 
-.ypresDiv {
-  max-width: 100%;
+.form-row input [type=text] :invalid .form-row input [type=email] :invalid {
+  border: 2px solid goldenrod;
 }
 
 .pypres {
@@ -560,7 +500,22 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+}
+
+.bodyIndex {
+  background: linear-gradient(to right, #1e5737, #487c58);
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,10 @@
 /* INICIO */
 /* h1/inicio */
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .contenedorPrincipal {
   background-color: #111111;
   display: grid;
@@ -12,21 +16,23 @@
   height: 100vh;
 }
 
-
 .menu {
   padding: 10px;
   grid-area: menu;
   height: 50px;
   background-color: #191919;
-  color: #B1CB08;
-  
+  color: #b1cb08;
+}
+.menu__list a:hover {
+  color: #b1cb08;
+  border-bottom: 2px solid #487c58;
 }
 
 .imagen1 {
   grid-area: imagen1;
   background-color: #191919;
   padding: 2rem;
- }
+}
 
 .imagen2 {
   grid-area: imagen2;
@@ -37,13 +43,13 @@
 .contenido1 {
   grid-area: contenido1;
   background-color: #191919;
-  color: #B1CB08;
+  color: #b1cb08;
 }
 
 .contenido2 {
   grid-area: contenido2;
   background-color: #191919;
-  color: #B1CB08;
+  color: #b1cb08;
 }
 
 footer {
@@ -69,14 +75,18 @@ footer {
 
 .menu a {
   text-decoration: none;
-  color: #B1CB08;
+  color: #b1cb08;
   padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.menu__list {
+  text-align: center;
 }
 
 footer,
 .redes a {
-  text-decoration: none;
-  color: #B1CB08;
+  color: #b1cb08;
   padding: 20px;
   text-align: center;
   justify-content: center;
@@ -90,39 +100,42 @@ footer,
   margin-left: 0.6rem;
   margin: 8px;
   border: 2px solid springgreen;
-  margin-left: 0rem;
+  object-fit: cover;
 }
 
-
-a {
-  padding: 10px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-@media screen and (max-width:770px) and (min-width:350px) {
-
- .imagenEstilos {
-  width: 160%;
-  height: auto;
-  padding: 20px;
-  margin-left: 0.6rem;
-  margin: 8px;
-  border: 2px solid springgreen;
-
+@media screen and (min-width: 350px) and (max-width: 770px) {
+  .imagenEstilos {
+    width: 160%;
+    height: auto;
+    padding: 20px;
+    margin-left: 0.6rem;
+    margin: 8px;
+    border: 2px solid springgreen;
   }
   .parrafoEstilo {
     padding: 22px;
     text-align: justify;
   }
 
-    .parrafoEstilo {
-      margin: 2rem;
-    }
+  .parrafoEstilo {
+    margin: 2rem;
+  }
+}
 
- } 
+@media screen and (min-width: 150px) and (max-width: 766px) {
+  .contenedorPrincipal {
+    height: 0;
+  }
+  .mi-display {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mi-display {
+    display: none;
+  }
+  .contenedorPrincipal {
+    height: auto;
+  }
+}
